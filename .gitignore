@@ -1,1 +1,7 @@
+**/*.json
+**/*.html
+**/*.log
+**/*.bak
+**/html
 **/json
+
