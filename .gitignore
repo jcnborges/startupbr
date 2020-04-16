@@ -2,6 +2,5 @@
 **/*.html
 **/*.log
 **/*.bak
-**/html
-**/json
+**/*.csv
 

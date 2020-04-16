@@ -36,9 +36,10 @@ def menuPrincipal():
     writeConsole("\nMenu de Opções:",  consoleType.WARNING,  False)
     writeConsole("1. Fazer nova busca.",  consoleType.WARNING,  False)
     writeConsole("2. Recuperar buscas anteriores.",  consoleType.WARNING,  False)
-    writeConsole("3. Sair.",  consoleType.WARNING,  False)
+    writeConsole("3. Coletar seeds de todas as buscas.",  consoleType.WARNING,  False)
+    writeConsole("4. Sair.",  consoleType.WARNING,  False)
     i = lerInteiro("Opção desejada: ")
-    while i < 1 or i > 3:
+    while i < 1 or i > 4:
         writeConsole("Opção inválida!",  consoleType.ERROR)
         i = lerInteiro("Opção desejada: ")
     return i
@@ -54,11 +55,13 @@ except:
     
 titulo()
 i = 0
-while i != 3:
+while i != 4:
     i = menuPrincipal()
     if i == 1: 
         fazerNovaBusca(listHistBuscas)
     elif i == 2:
         recuperarBuscasAnteriores(listHistBuscas)
+    elif i == 3:
+        coletarSeedsTodasBuscas(listHistBuscas)
 writeConsole("Programa encerrado. Espero que tenham gostado!", consoleType.INFO,  False)
 time.sleep(1.5)

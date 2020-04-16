@@ -26,6 +26,8 @@ from bs4 import BeautifulSoup
 #----------------------------------------------------------
 
 LINKEDIN_URL = 'https://www.linkedin.com'
+TITLE_FILTER = '&origin=FACETED_SEARCH&title=(ceo%20OR%20founder%20OR%20owner%20OR%20fundador%20OR%20socio)%20NOT%20product'
+QTD_BUSCA_DORMIR = 60
 
 class situacaoBusca:
     NAO_PROCESSADO = 'Não processado'
@@ -75,7 +77,33 @@ def recuperarBuscasAnteriores(listHistBuscas):
     if i < n:
         menuBusca(listHistBuscas,listHistBuscas[len(listHistBuscas)-i])
         recuperarBuscasAnteriores(listHistBuscas)
-            
+
+def coletarSeedsTodasBuscas(listHistBuscas):
+    writeConsole("==================================",  consoleType.WARNING,  False)
+    writeConsole("  2. Coleta Seeds Todas Buscas    ",  consoleType.WARNING,  False)
+    writeConsole("==================================",  consoleType.WARNING,  False)
+    n = 1
+    q = 1
+    driver = None
+    try:
+        for dic in reversed(listHistBuscas):        
+            writeConsole("Processando busca {0} de {1} ({2:.2f}%)...".format(n, len(listHistBuscas), n / len(listHistBuscas)),  consoleType.WARNING)                
+            writeConsole("{0}".format(strBusca(dic)),  consoleType.SUCCESS,  False)                
+            if dic["situacao"] != situacaoBusca.PROCESSADO_SUCESSO and dic["situacao"] != situacaoBusca.PROCESSADO_ERRO:
+                if q == QTD_SEED_DORMIR - 1:
+                    # dorme (5 ~ 15 min) um tempo para evitar bloqueios
+                    q = 1
+                    writeConsole("\nWeb crawler em modo de suspensão (5 ~ 15 min)...",  consoleType.WARNING,  True)
+                    congelarBrowser(300, 900)                        
+                driver = coletarSeeds(listHistBuscas, dic, True, driver)
+                q += 1
+            n += 1
+    finally:
+        try:
+            driver.close()
+        except Exception as  e:
+            writeConsole(str(e),  consoleType.ERROR)          
+               
 def strBusca(dicBusca):
     str = "{\n"
     for k in sorted(dicBusca):
@@ -130,19 +158,20 @@ def excluirBusca(listHistBuscas, dicBusca):
     except Exception as  e:
         writeConsole(str(e),  consoleType.ERROR)  
 
-def coletarSeeds(listHistBuscas,  dicBusca):
-    writeConsole("Deseja iniciar a coleta de seeds?",  consoleType.WARNING,  False)
-    writeConsole("1. Sim.",  consoleType.WARNING,  False)
-    writeConsole("2. Não.",  consoleType.WARNING,  False)
-    i = lerInteiro("Opção desejada: ")
-    while i < 1 or i > 2:
-        writeConsole("Opção inválida!",  consoleType.ERROR)
+def coletarSeeds(listHistBuscas,  dicBusca, continua = False, driver = None):
+    if not continua:
+        writeConsole("Deseja iniciar a coleta de seeds?",  consoleType.WARNING,  False)
+        writeConsole("1. Sim.",  consoleType.WARNING,  False)
+        writeConsole("2. Não.",  consoleType.WARNING,  False)
         i = lerInteiro("Opção desejada: ")
-    if i == 2: 
-        return
-    driver = None
+        while i < 1 or i > 2:
+            writeConsole("Opção inválida!",  consoleType.ERROR)
+            i = lerInteiro("Opção desejada: ")
+        if i == 2: 
+            return
     try:
-        driver = criarDriver()
+        if (driver == None):
+            driver = criarDriver()
         dataHora = datetime.datetime.now()
         
         totalResults = None
@@ -150,23 +179,36 @@ def coletarSeeds(listHistBuscas,  dicBusca):
         pageStart = 1
         flagInicio = False
         if (dicBusca["situacao"] in [situacaoBusca.EM_EXECUCAO, situacaoBusca.PROCESSADO_ERRO] and "ultima_pagina_processada_exito" in dicBusca.keys()):
-            writeConsole("Aparentemente uma execução anterior foi interrompida. Deseja continuar no ponto em que ela parou?",  consoleType.INFO,  False)
-            writeConsole("1. Sim, desejo continuar do ponto em que parou.",  consoleType.WARNING,  False)
-            writeConsole("2. Não, quero que a coleta reinicie do começo.",  consoleType.WARNING,  False)
-            i = lerInteiro("Opção desejada: ")
-            while i < 1 or i > 2:
-                writeConsole("Opção inválida!",  consoleType.ERROR)
+            if not continua:
+                writeConsole("Aparentemente uma execução anterior foi interrompida. Deseja continuar no ponto em que ela parou?",  consoleType.INFO,  False)
+                writeConsole("1. Sim, desejo continuar do ponto em que parou.",  consoleType.WARNING,  False)
+                writeConsole("2. Não, quero que a coleta reinicie do começo.",  consoleType.WARNING,  False)
                 i = lerInteiro("Opção desejada: ")
-            if (i == 1):
+                while i < 1 or i > 2:
+                    writeConsole("Opção inválida!",  consoleType.ERROR)
+                    i = lerInteiro("Opção desejada: ")
+                if (i == 1):
+                    totalResults = dicBusca["totalSeeds"]
+                    totalPaginas = dicBusca["totalPaginas"]
+                    pageStart = dicBusca["ultima_pagina_processada_exito"] + 1                
+                else:
+                    flagInicio = True
+            else:
                 totalResults = dicBusca["totalSeeds"]
                 totalPaginas = dicBusca["totalPaginas"]
-                pageStart = dicBusca["ultima_pagina_processada_exito"] + 1                
-            else:
-                flagInicio = True
+                pageStart = dicBusca["ultima_pagina_processada_exito"] + 1                                
         else:
             flagInicio = True        
+
+        if ("url" not in dicBusca.keys()):                
+            driver.get(dicBusca["url_empresa"])
+            page_source = driver.page_source
+            soup = BeautifulSoup(page_source, "lxml") #grab the content with beautifulsoup for parsing
+            url = soup.find("a", {"class":"link-without-visited-state inline-block ember-view"})
+            url = url["href"]
+            dicBusca.update({"url": LINKEDIN_URL + url + TITLE_FILTER})
             
-        if flagInicio:
+        if flagInicio:                            
             driver.get(dicBusca["url"])
             # para descer a pagina um pouco para carregar todos os elementos que temos interesse        
             fazerBrowserScroll(6, 1.5, 2.5, 300, driver)
@@ -182,6 +224,9 @@ def coletarSeeds(listHistBuscas,  dicBusca):
             totalResults = totalResults.replace(" resultados","")
             totalResults = totalResults.replace("+ de","")            
             totalResults = totalResults.replace(".","")
+            totalResults = totalResults.replace("Cerca de","")
+            totalResults = totalResults.replace(" resultado","")
+            totalResults = totalResults.replace(" result","")
             totalResults = totalResults.strip()
             totalPaginas = math.ceil(int(totalResults)/10.0)  
             dicBusca.update({"totalSeeds":totalResults})
@@ -200,11 +245,22 @@ def coletarSeeds(listHistBuscas,  dicBusca):
         writeConsole(str(e),  consoleType.ERROR) 
         dicBusca.update({"situacao":situacaoBusca.PROCESSADO_ERRO})
     finally:
-        try:
-            driver.close()
-        except Exception as  e:
-            writeConsole(str(e),  consoleType.ERROR)  
         gravarHistoricoBuscas(listHistBuscas)
+        if not continua:
+            try:
+                driver.close()
+            except Exception as  e:
+                writeConsole(str(e),  consoleType.ERROR)          
+            return None
+        else:
+            try:
+                if not validarBloqueioPagina(driver.page_source):
+                    return driver
+                else:
+                    return None
+            except Exception as  e:
+                writeConsole(str(e),  consoleType.ERROR)
+                return None
 
 def processarPagina(dicBusca,  page,  driver):
     writeConsole("\nProcessando página {0} de {1}...".format(page, dicBusca["totalPaginas"]),  consoleType.INFO,  False)

@@ -56,7 +56,8 @@ def criarDriver():
     #driver = webdriver.Firefox(firefox_binary=binary, executable_path=GECKODRIVER_EXE)
     driver = webdriver.Firefox(firefox_profile = profile)
     driver.get(LINKEDIN_URL)        
-    #lerString("Digite login/senha do LinkedIn e pressione ENTER...")
+    if validarBloqueioPagina(driver.page_source):
+        lerString("Digite login/senha do LinkedIn e pressione ENTER...")
     return driver
 
 # Verifica se a pagina foi bloqueada, retorna True caso tenha sido
