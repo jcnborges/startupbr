@@ -27,7 +27,7 @@ from bs4 import BeautifulSoup
 
 LINKEDIN_URL = 'https://www.linkedin.com'
 TITLE_FILTER = '&origin=FACETED_SEARCH&title=(ceo%20OR%20founder%20OR%20owner%20OR%20fundador%20OR%20socio)%20NOT%20product'
-QTD_BUSCA_DORMIR = 60
+QTD_BUSCA_DORMIR = 20
 
 class situacaoBusca:
     NAO_PROCESSADO = 'Não processado'
@@ -89,8 +89,8 @@ def coletarSeedsTodasBuscas(listHistBuscas):
         for dic in reversed(listHistBuscas):        
             writeConsole("Processando busca {0} de {1} ({2:.2f}%)...".format(n, len(listHistBuscas), n / len(listHistBuscas)),  consoleType.WARNING)                
             writeConsole("{0}".format(strBusca(dic)),  consoleType.SUCCESS,  False)                
-            if dic["situacao"] != situacaoBusca.PROCESSADO_SUCESSO and dic["situacao"] != situacaoBusca.PROCESSADO_ERRO:
-                if q == QTD_SEED_DORMIR - 1:
+            if dic["situacao"] != situacaoBusca.PROCESSADO_SUCESSO:
+                if q == QTD_BUSCA_DORMIR - 1:
                     # dorme (5 ~ 15 min) um tempo para evitar bloqueios
                     q = 1
                     writeConsole("\nWeb crawler em modo de suspensão (5 ~ 15 min)...",  consoleType.WARNING,  True)
@@ -98,6 +98,8 @@ def coletarSeedsTodasBuscas(listHistBuscas):
                 driver = coletarSeeds(listHistBuscas, dic, True, driver)
                 q += 1
             n += 1
+    except Exception as  e:
+            writeConsole(str(e),  consoleType.ERROR)     
     finally:
         try:
             driver.close()
@@ -253,14 +255,11 @@ def coletarSeeds(listHistBuscas,  dicBusca, continua = False, driver = None):
                 writeConsole(str(e),  consoleType.ERROR)          
             return None
         else:
-            try:
-                if not validarBloqueioPagina(driver.page_source):
-                    return driver
-                else:
-                    return None
-            except Exception as  e:
-                writeConsole(str(e),  consoleType.ERROR)
-                return None
+            if validarBloqueioPagina(driver.page_source):
+                driver.close()
+                raise Exception('A página foi bloqueada! Finalizando o web crawler...')
+            else:
+                return driver
 
 def processarPagina(dicBusca,  page,  driver):
     writeConsole("\nProcessando página {0} de {1}...".format(page, dicBusca["totalPaginas"]),  consoleType.INFO,  False)
