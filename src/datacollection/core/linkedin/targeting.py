@@ -26,8 +26,9 @@ from bs4 import BeautifulSoup
 #----------------------------------------------------------
 
 LINKEDIN_URL = 'https://www.linkedin.com'
-TITLE_FILTER = '&origin=FACETED_SEARCH&title=(ceo%20OR%20founder%20OR%20owner%20OR%20fundador%20OR%20socio)%20NOT%20product'
-QTD_BUSCA_DORMIR = 20
+# suporta no máximo 5 operadores lógicos
+TITLE_FILTER = '&origin=FACETED_SEARCH&title=(ceo%20OR%20founder%20OR%20owner%20OR%20fundador%20OR%20socio)%20NOT%20(product%20owner)'
+QTD_BUSCA_DORMIR = 45
 
 class situacaoBusca:
     NAO_PROCESSADO = 'Não processado'
@@ -87,9 +88,9 @@ def coletarSeedsTodasBuscas(listHistBuscas):
     driver = None
     try:
         for dic in reversed(listHistBuscas):        
-            writeConsole("Processando busca {0} de {1} ({2:.2f}%)...".format(n, len(listHistBuscas), n / len(listHistBuscas)),  consoleType.WARNING)                
+            writeConsole("Processando busca {0} de {1} ({2:.2f}%)...".format(n, len(listHistBuscas), 100 * (n / len(listHistBuscas))),  consoleType.WARNING)                
             writeConsole("{0}".format(strBusca(dic)),  consoleType.SUCCESS,  False)                
-            if dic["situacao"] != situacaoBusca.PROCESSADO_SUCESSO:
+            if dic["situacao"] not in [situacaoBusca.PROCESSADO_SUCESSO, situacaoBusca.PROCESSADO_ERRO]:
                 if q == QTD_BUSCA_DORMIR - 1:
                     # dorme (5 ~ 15 min) um tempo para evitar bloqueios
                     q = 1

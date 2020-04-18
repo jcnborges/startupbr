@@ -64,5 +64,8 @@ def criarDriver():
 def validarBloqueioPagina(page_source):
     soup = BeautifulSoup(page_source, "lxml") #grab the content with beautifulsoup for parsing
     botaoLogin = soup.find("a",{"class":"nav__button-secondary"}, {"data-tracking-control-name":"signin"}) 
-    limiteAlcancado = soup.find("h1",{"class":"t-20 t-black t-normal mb2"})
-    return botaoLogin != None or limiteAlcancado != None   
+    msg = soup.find("h1",{"class":"t-20 t-black t-normal mb2"})
+    fLimite = False
+    if msg != None:
+        fLimite = "limite" in msg.text.lower()
+    return botaoLogin != None or fLimite
