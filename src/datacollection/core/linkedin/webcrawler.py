@@ -21,17 +21,25 @@ from util.fileIO import *
 #----------------------------------------------------------
 QTD_SEED_DORMIR = 20
 
+class situacaoWebCrawler:
+    EM_EXECUCAO = 'Em execução'
+    PROCESSADO_SUCESSO = 'Processado com sucesso'
+    PROCESSADO_ERRO = 'Processado com erros'
+
 #----------------------------------------------------------
 # Definicao de procedures 
 #----------------------------------------------------------
-def iniciarWebCrawler(listHistBuscas, dicBusca):
+def iniciarWebCrawler(listHistBuscas, dicBusca, continua = False, driver = None):
+    if "situacaoWebCrawler" not in dicBusca.keys():
+        dicBusca.update({"situacaoWebCrawler":situacaoWebCrawler.EM_EXECUCAO})
+        
     if not "lista_seeds" in dicBusca:
         writeConsole("Busca não possui seeds, não se pode iniciar o web crawler.",  consoleType.ERROR,  True)    
-        return
+        return driver
     
     n = len(dicBusca["lista_seeds"])
     if n == 0:
-        return    
+        return driver
     
     if not os.path.exists(HTML_DIR):
         os.mkdir(HTML_DIR)
@@ -40,10 +48,12 @@ def iniciarWebCrawler(listHistBuscas, dicBusca):
     if not os.path.exists(out_put_dir):
         os.mkdir(out_put_dir)
         
-    driver = None
     try:
-        driver = criarDriver()        
-        writeConsole("Iniciando o web crawler... aguarde. O procedimento poderá levar muitas horas!",  consoleType.WARNING,  True)
+        if (driver == None):
+            driver = criarDriver()
+        
+        if not continua:
+            writeConsole("Iniciando o web crawler... aguarde. O procedimento poderá levar muitas horas!",  consoleType.WARNING,  True)
         
         c = 1
         q = 1
@@ -77,15 +87,27 @@ def iniciarWebCrawler(listHistBuscas, dicBusca):
             gravarHTML(page_source, file_path)
 
             seed.update({"file_path":file_path})            
-            gravarHistoricoBuscas(listHistBuscas)                
+            gravarHistoricoBuscas(listHistBuscas)
             writeConsole("Arquivo gravado com sucesso em {0}!".format(file_path),  consoleType.SUCCESS,  False)
             c += 1
             q += 1
+        dicBusca.update({"situacaoWebCrawler":situacaoWebCrawler.PROCESSADO_SUCESSO})
     except Exception as  e:
         writeConsole(str(e), consoleType.ERROR) 
+        dicBusca.update({"situacaoWebCrawler":situacaoWebCrawler.PROCESSADO_ERRO})
     finally:
-        try:
-            driver.close()
-        except Exception as  e:
-            writeConsole(str(e), consoleType.ERROR)
+        gravarHistoricoBuscas(listHistBuscas)
+        if not continua:
+            try:
+                driver.close()
+            except Exception as  e:
+                writeConsole(str(e),  consoleType.ERROR)          
+            return None
+        else:
+            if validarBloqueioPagina(driver.page_source):
+                driver.close()
+                raise Exception('A página foi bloqueada! Finalizando o web crawler...')
+            else:
+                return driver
+
     

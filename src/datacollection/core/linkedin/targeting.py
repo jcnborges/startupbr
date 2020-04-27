@@ -106,7 +106,35 @@ def coletarSeedsTodasBuscas(listHistBuscas):
             driver.close()
         except Exception as  e:
             writeConsole(str(e),  consoleType.ERROR)          
-               
+
+def iniciarWebCrawlerTodasBuscas(listHistBuscas):
+    writeConsole("==================================",  consoleType.WARNING,  False)
+    writeConsole("  3. Web Crawler Todas Buscas     ",  consoleType.WARNING,  False)
+    writeConsole("==================================",  consoleType.WARNING,  False)
+    n = 1
+    q = 1
+    driver = None
+    try:
+        for dic in reversed(listHistBuscas):        
+            writeConsole("Processando busca {0} de {1} ({2:.2f}%)...".format(n, len(listHistBuscas), 100 * (n / len(listHistBuscas))),  consoleType.WARNING)                
+            writeConsole("{0}".format(strBusca(dic)),  consoleType.SUCCESS,  False)                
+            if dic["situacao"] == situacaoBusca.PROCESSADO_SUCESSO and ("situacaoWebCrawler" not in dic.keys() or dic["situacaoWebCrawler"] != situacaoWebCrawler.PROCESSADO_SUCESSO):
+                if q == QTD_BUSCA_DORMIR - 1:
+                    # dorme (5 ~ 15 min) um tempo para evitar bloqueios
+                    q = 1
+                    writeConsole("\nWeb crawler em modo de suspensão (5 ~ 15 min)...",  consoleType.WARNING,  True)
+                    congelarBrowser(300, 900)                        
+                driver = iniciarWebCrawler(listHistBuscas, dic, True, driver)
+                q += 1
+            n += 1
+    except Exception as  e:
+            writeConsole(str(e),  consoleType.ERROR)     
+    finally:
+        try:
+            driver.close()
+        except Exception as  e:
+            writeConsole(str(e),  consoleType.ERROR)          
+            
 def strBusca(dicBusca):
     str = "{\n"
     for k in sorted(dicBusca):
