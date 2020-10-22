@@ -1,0 +1,1490 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2020-07-02">
+    <creator>NetworkX 2.4</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="cidade" type="string" />
+      <attribute id="1" title="estado" type="string" />
+      <attribute id="2" title="regiao" type="string" />
+      <attribute id="3" title="latitude" type="string" />
+      <attribute id="4" title="longitude" type="string" />
+      <attribute id="5" title="categoria1" type="string" />
+      <attribute id="6" title="categoria2" type="string" />
+      <attribute id="7" title="Polygon" type="long" />
+      <attribute id="8" title="ranking1" type="string" />
+      <attribute id="9" title="ranking2" type="string" />
+      <attribute id="10" title="bipartite" type="long" />
+      <attribute id="11" title="ies" type="string" />
+      <attribute id="12" title="degree" type="double" />
+      <attribute id="13" title="degree_ies" type="double" />
+      <attribute id="14" title="closeness" type="double" />
+      <attribute id="15" title="closeness_ies" type="double" />
+      <attribute id="16" title="betweenness" type="double" />
+      <attribute id="17" title="betweenness_ies" type="double" />
+      <attribute id="18" title="sdg_0_1" type="long" />
+      <attribute id="19" title="sdg_1_2" type="long" />
+      <attribute id="20" title="sdg_2_3" type="long" />
+      <attribute id="21" title="sdg_3_4" type="long" />
+      <attribute id="22" title="sdg_4_5" type="long" />
+      <attribute id="23" title="sdg_5_6" type="long" />
+      <attribute id="24" title="sdg_6_7" type="long" />
+      <attribute id="25" title="sdg_7_8" type="long" />
+      <attribute id="26" title="sdg_8_9" type="long" />
+      <attribute id="27" title="sdg_9_10" type="long" />
+    </attributes>
+    <nodes>
+      <node id="UFC" label="UFC">
+        <attvalues>
+          <attvalue for="0" value="Fortaleza" />
+          <attvalue for="1" value="Ceará" />
+          <attvalue for="2" value="Nordeste" />
+          <attvalue for="3" value="-3.741891700000000000" />
+          <attvalue for="4" value="-38.589928000000000000" />
+          <attvalue for="5" value="Universidade" />
+          <attvalue for="6" value="Pública" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="3.880570000000000000" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="UFC" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.07692307692307693" />
+          <attvalue for="15" value="0.07692307692307693" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="1" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="4advisory" label="4advisory">
+        <attvalues>
+          <attvalue for="0" value="Belém" />
+          <attvalue for="1" value="Pará" />
+          <attvalue for="2" value="Norte" />
+          <attvalue for="3" value="-1.441292100000000000" />
+          <attvalue for="4" value="-48.487826000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.08333333333333333" />
+          <attvalue for="14" value="0.11371237458193979" />
+          <attvalue for="16" value="0.0009871668311944718" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="2" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="UNIFOR" label="UNIFOR">
+        <attvalues>
+          <attvalue for="0" value="Fortaleza" />
+          <attvalue for="1" value="Ceará" />
+          <attvalue for="2" value="Nordeste" />
+          <attvalue for="3" value="-3.768775300000000000" />
+          <attvalue for="4" value="-38.589928000000000000" />
+          <attvalue for="5" value="Universidade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="3.075210000000000000" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="UNIFOR" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.07692307692307693" />
+          <attvalue for="15" value="0.07692307692307693" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="1" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="USP" label="USP">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.561399100000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Universidade" />
+          <attvalue for="6" value="Pública" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="USP" />
+          <attvalue for="12" value="0.30434782608695654" />
+          <attvalue for="13" value="0.30434782608695654" />
+          <attvalue for="14" value="0.875" />
+          <attvalue for="15" value="0.875" />
+          <attvalue for="16" value="0.07608695652173914" />
+          <attvalue for="17" value="0.07608695652173914" />
+          <attvalue for="18" value="6" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="1" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="aprex" label="aprex">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.561756000000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.5593419506462985" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="FACULDADE ANHANGÜERA DE PIRACICABA" label="FACULDADE ANHANGÜERA DE PIRACICABA">
+        <attvalues>
+          <attvalue for="0" value="Piracicaba" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-22.745233200000000000" />
+          <attvalue for="4" value="-47.646846000000000000" />
+          <attvalue for="5" value="Faculdade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="2.347170000000000000" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="FACULDADE ANHANGÜERA DE PIRACICABA" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.26627218934911245" />
+          <attvalue for="15" value="0.26627218934911245" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="1" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="b2w-digital" label="b2w-digital">
+        <attvalues>
+          <attvalue for="0" value="Rio de Janeiro" />
+          <attvalue for="1" value="Rio de Janeiro" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-22.897152000000000000" />
+          <attvalue for="4" value="-43.227875000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.16666666666666666" />
+          <attvalue for="14" value="0.42642140468227424" />
+          <attvalue for="16" value="0.012833168805528134" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="1" />
+          <attvalue for="23" value="2" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="UNESA" label="UNESA">
+        <attvalues>
+          <attvalue for="0" value="Curitiba" />
+          <attvalue for="1" value="Paraná" />
+          <attvalue for="2" value="Sul" />
+          <attvalue for="3" value="-25.431711600000000000" />
+          <attvalue for="4" value="-49.271848000000000000" />
+          <attvalue for="5" value="Universidade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="2.701880000000000000" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="UNESA" />
+          <attvalue for="12" value="0.08695652173913043" />
+          <attvalue for="13" value="0.08695652173913043" />
+          <attvalue for="14" value="0.3146853146853147" />
+          <attvalue for="15" value="0.3146853146853147" />
+          <attvalue for="16" value="0.004940711462450593" />
+          <attvalue for="17" value="0.004940711462450593" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="2" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="UFRJ" label="UFRJ">
+        <attvalues>
+          <attvalue for="0" value="Rio de Janeiro" />
+          <attvalue for="1" value="Rio de Janeiro" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-22.861707700000000000" />
+          <attvalue for="4" value="-43.227875000000000000" />
+          <attvalue for="5" value="Universidade" />
+          <attvalue for="6" value="Pública" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="4.076550000000000000" />
+          <attvalue for="9" value="5" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="UFRJ" />
+          <attvalue for="12" value="0.08695652173913043" />
+          <attvalue for="13" value="0.08695652173913043" />
+          <attvalue for="14" value="0.3146853146853147" />
+          <attvalue for="15" value="0.3146853146853147" />
+          <attvalue for="16" value="0.004940711462450593" />
+          <attvalue for="17" value="0.004940711462450593" />
+          <attvalue for="18" value="2" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="FACIC" label="FACIC">
+        <attvalues>
+          <attvalue for="0" value="Curitiba" />
+          <attvalue for="1" value="Paraná" />
+          <attvalue for="2" value="Sul" />
+          <attvalue for="3" value="-25.456039300000000000" />
+          <attvalue for="4" value="-49.271848000000000000" />
+          <attvalue for="5" value="Faculdade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="2.409510000000000000" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="FACIC" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.26627218934911245" />
+          <attvalue for="15" value="0.26627218934911245" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="1" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="condovox" label="condovox">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.523964500000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.08333333333333333" />
+          <attvalue for="14" value="0.6271409749670619" />
+          <attvalue for="16" value="0.023692003948667325" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="1" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="CEUN-IMT" label="CEUN-IMT">
+        <attvalues>
+          <attvalue for="0" value="São Caetano do Sul" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.648340400000000000" />
+          <attvalue for="4" value="-46.571515000000000000" />
+          <attvalue for="5" value="Centro Universitário" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="5" />
+          <attvalue for="8" value="2.987410000000000000" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="CEUN-IMT" />
+          <attvalue for="12" value="0.08695652173913043" />
+          <attvalue for="13" value="0.08695652173913043" />
+          <attvalue for="14" value="0.4772727272727273" />
+          <attvalue for="15" value="0.4772727272727273" />
+          <attvalue for="16" value="0.012845849802371542" />
+          <attvalue for="17" value="0.012845849802371542" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="1" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="1" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="devcase-technology" label="devcase-technology">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.575688100000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.5593419506462985" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="FUMEC" label="FUMEC">
+        <attvalues>
+          <attvalue for="0" value="Belo Horizonte" />
+          <attvalue for="1" value="Minas Gerais" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-19.943803900000000000" />
+          <attvalue for="4" value="-43.926453000000000000" />
+          <attvalue for="5" value="Universidade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="2.787470000000000000" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="FUMEC" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.11538461538461539" />
+          <attvalue for="15" value="0.11538461538461539" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="emotion-studios" label="emotion-studios">
+        <attvalues>
+          <attvalue for="0" value="Belo Horizonte" />
+          <attvalue for="1" value="Minas Gerais" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-19.962280000000000000" />
+          <attvalue for="4" value="-43.926453000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.08333333333333333" />
+          <attvalue for="14" value="0.1705685618729097" />
+          <attvalue for="16" value="0.0019743336623889436" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="1" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="UFMG" label="UFMG">
+        <attvalues>
+          <attvalue for="0" value="Belo Horizonte" />
+          <attvalue for="1" value="Minas Gerais" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-19.870682000000000000" />
+          <attvalue for="4" value="-43.926453000000000000" />
+          <attvalue for="5" value="Universidade" />
+          <attvalue for="6" value="Pública" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="4.249650000000000000" />
+          <attvalue for="9" value="5" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="UFMG" />
+          <attvalue for="12" value="0.08695652173913043" />
+          <attvalue for="13" value="0.08695652173913043" />
+          <attvalue for="14" value="0.17307692307692307" />
+          <attvalue for="15" value="0.17307692307692307" />
+          <attvalue for="16" value="0.001976284584980237" />
+          <attvalue for="17" value="0.001976284584980237" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="1" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="eprimecare" label="eprimecare">
+        <attvalues>
+          <attvalue for="0" value="Belo Horizonte" />
+          <attvalue for="1" value="Minas Gerais" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-19.917101900000000000" />
+          <attvalue for="4" value="-43.926453000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.1137123745819398" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="IBMEC" label="IBMEC">
+        <attvalues>
+          <attvalue for="0" value="Curitiba" />
+          <attvalue for="1" value="Paraná" />
+          <attvalue for="2" value="Sul" />
+          <attvalue for="3" value="-25.427272800000000000" />
+          <attvalue for="4" value="-49.271848000000000000" />
+          <attvalue for="5" value="Faculdade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="3.327430000000000000" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="IBMEC" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.07692307692307693" />
+          <attvalue for="15" value="0.07692307692307693" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="1" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="foregon" label="foregon">
+        <attvalues>
+          <attvalue for="0" value="Presidente Prudente" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-22.140068000000000000" />
+          <attvalue for="4" value="-51.386766000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.08333333333333333" />
+          <attvalue for="14" value="0.11371237458193979" />
+          <attvalue for="16" value="0.0009871668311944718" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="1" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="TOLEDO PRUDENTE" label="TOLEDO PRUDENTE">
+        <attvalues>
+          <attvalue for="0" value="Presidente Prudente" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-22.114204000000000000" />
+          <attvalue for="4" value="-51.386766000000000000" />
+          <attvalue for="5" value="Centro Universitário" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="5" />
+          <attvalue for="8" value="3.331940000000000000" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="TOLEDO PRUDENTE" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.07692307692307693" />
+          <attvalue for="15" value="0.07692307692307693" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="ITA" label="ITA">
+        <attvalues>
+          <attvalue for="0" value="São José dos Campos" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.210871400000000000" />
+          <attvalue for="4" value="-45.884175000000000000" />
+          <attvalue for="5" value="Faculdade" />
+          <attvalue for="6" value="Pública" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="4.262930000000000000" />
+          <attvalue for="9" value="5" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="ITA" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.07692307692307693" />
+          <attvalue for="15" value="0.07692307692307693" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="ft-sistemas-s-a" label="ft-sistemas-s-a">
+        <attvalues>
+          <attvalue for="0" value="São José dos Campos" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.246305700000000000" />
+          <attvalue for="4" value="-45.884175000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.08333333333333333" />
+          <attvalue for="14" value="0.11371237458193979" />
+          <attvalue for="16" value="0.0009871668311944718" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="1" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="PUCRS" label="PUCRS">
+        <attvalues>
+          <attvalue for="0" value="Porto Alegre" />
+          <attvalue for="1" value="Rio Grande do Sul" />
+          <attvalue for="2" value="Sul" />
+          <attvalue for="3" value="-30.058925000000000000" />
+          <attvalue for="4" value="-51.228660000000000000" />
+          <attvalue for="5" value="Universidade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="3.664940000000000000" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="PUCRS" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.07692307692307693" />
+          <attvalue for="15" value="0.07692307692307693" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="1" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="ESPM" label="ESPM">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.590000000000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Faculdade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="3.058100000000000000" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="ESPM" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.0" />
+          <attvalue for="15" value="0.0" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="hive-17" label="hive-17">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.623737700000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.0" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="it-safe-information-security" label="it-safe-information-security">
+        <attvalues>
+          <attvalue for="0" value="Rio de Janeiro" />
+          <attvalue for="1" value="Rio de Janeiro" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-22.927445100000000000" />
+          <attvalue for="4" value="-43.227875000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.21321070234113712" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="FATIPUC" label="FATIPUC">
+        <attvalues>
+          <attvalue for="0" value="Canoas" />
+          <attvalue for="1" value="Rio Grande do Sul" />
+          <attvalue for="2" value="Sul" />
+          <attvalue for="3" value="-29.925082700000000000" />
+          <attvalue for="4" value="-51.181030000000000000" />
+          <attvalue for="5" value="Faculdade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="1.516480000000000000" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="FATIPUC" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.0" />
+          <attvalue for="15" value="0.0" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="1" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="ivarejo" label="ivarejo">
+        <attvalues>
+          <attvalue for="0" value="Rio de Janeiro" />
+          <attvalue for="1" value="Rio de Janeiro" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-22.986024900000000000" />
+          <attvalue for="4" value="-43.227875000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.0" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="1" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="FGVSP" label="FGVSP">
+        <attvalues>
+          <attvalue for="0" value="Rio de Janeiro" />
+          <attvalue for="1" value="Rio de Janeiro" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-22.941373000000000000" />
+          <attvalue for="4" value="-43.227875000000000000" />
+          <attvalue for="5" value="Faculdade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="4.780440000000000000" />
+          <attvalue for="9" value="5" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="FGVSP" />
+          <attvalue for="12" value="0.13043478260869565" />
+          <attvalue for="13" value="0.13043478260869565" />
+          <attvalue for="14" value="0.5526315789473685" />
+          <attvalue for="15" value="0.5526315789473685" />
+          <attvalue for="16" value="0.024703557312252964" />
+          <attvalue for="17" value="0.024703557312252964" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="3" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="joca" label="joca">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.491913300000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.4057971014492754" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="1" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="UFU" label="UFU">
+        <attvalues>
+          <attvalue for="0" value="Uberlândia" />
+          <attvalue for="1" value="Minas Gerais" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-18.918473000000000000" />
+          <attvalue for="4" value="-48.277950000000000000" />
+          <attvalue for="5" value="Universidade" />
+          <attvalue for="6" value="Pública" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="3.716570000000000000" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="UFU" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.0" />
+          <attvalue for="15" value="0.0" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="kyros-tecnologia" label="kyros-tecnologia">
+        <attvalues>
+          <attvalue for="0" value="Uberlândia" />
+          <attvalue for="1" value="Minas Gerais" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-18.901065000000000000" />
+          <attvalue for="4" value="-48.277950000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.0" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="UNIA" label="UNIA">
+        <attvalues>
+          <attvalue for="0" value="Santo André" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.662303800000000000" />
+          <attvalue for="4" value="-46.530874000000000000" />
+          <attvalue for="5" value="Centro Universitário" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="5" />
+          <attvalue for="8" value="1.945680000000000000" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="UNIA" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.13846153846153847" />
+          <attvalue for="15" value="0.13846153846153847" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="1" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="madero" label="madero">
+        <attvalues>
+          <attvalue for="0" value="Curitiba" />
+          <attvalue for="1" value="Paraná" />
+          <attvalue for="2" value="Sul" />
+          <attvalue for="3" value="-25.477840500000000000" />
+          <attvalue for="4" value="-49.271848000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.125" />
+          <attvalue for="14" value="0.2274247491638796" />
+          <attvalue for="16" value="0.0029615004935834156" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="2" />
+          <attvalue for="23" value="1" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="UNI-FACEF" label="UNI-FACEF">
+        <attvalues>
+          <attvalue for="0" value="Franca" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-20.537471300000000000" />
+          <attvalue for="4" value="-47.402332000000000000" />
+          <attvalue for="5" value="Centro Universitário" />
+          <attvalue for="6" value="Especial" />
+          <attvalue for="7" value="5" />
+          <attvalue for="8" value="2.983370000000000000" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="UNI-FACEF" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.13846153846153847" />
+          <attvalue for="15" value="0.13846153846153847" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="1" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="CUFSA" label="CUFSA">
+        <attvalues>
+          <attvalue for="0" value="Santo André" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.661370500000000000" />
+          <attvalue for="4" value="-46.530874000000000000" />
+          <attvalue for="5" value="Centro Universitário" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="5" />
+          <attvalue for="8" value="2.175420000000000000" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="CUFSA" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.13846153846153847" />
+          <attvalue for="15" value="0.13846153846153847" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="1" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="malware-patrol" label="malware-patrol">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.567387000000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.5593419506462985" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="PUCSP" label="PUCSP">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.537920100000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Universidade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="3.725610000000000000" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="PUCSP" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.4375" />
+          <attvalue for="15" value="0.4375" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="neora" label="neora">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.524477200000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.08333333333333333" />
+          <attvalue for="14" value="0.591304347826087" />
+          <attvalue for="16" value="0.012833168805528134" />
+          <attvalue for="18" value="2" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="pagseguro" label="pagseguro">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.570102600000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.4057971014492754" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="1" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="FURB" label="FURB">
+        <attvalues>
+          <attvalue for="0" value="Blumenau" />
+          <attvalue for="1" value="Santa Catarina" />
+          <attvalue for="2" value="Sul" />
+          <attvalue for="3" value="-26.905691300000000000" />
+          <attvalue for="4" value="-49.057631000000000000" />
+          <attvalue for="5" value="Universidade" />
+          <attvalue for="6" value="Pública" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="2.825570000000000000" />
+          <attvalue for="9" value="3" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="FURB" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.0" />
+          <attvalue for="15" value="0.0" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="sances" label="sances">
+        <attvalues>
+          <attvalue for="0" value="Blumenau" />
+          <attvalue for="1" value="Santa Catarina" />
+          <attvalue for="2" value="Sul" />
+          <attvalue for="3" value="-26.923425400000000000" />
+          <attvalue for="4" value="-49.057631000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.0" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="thinc-ce05" label="thinc-ce05">
+        <attvalues>
+          <attvalue for="0" value="Rio de Janeiro" />
+          <attvalue for="1" value="Rio de Janeiro" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-22.951187600000000000" />
+          <attvalue for="4" value="-43.227875000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.21321070234113712" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="1" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="uplexis-tecnologia" label="uplexis-tecnologia">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.519194600000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.125" />
+          <attvalue for="14" value="0.7136431784107946" />
+          <attvalue for="16" value="0.04244817374136229" />
+          <attvalue for="18" value="2" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="1" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="FFIA" label="FFIA">
+        <attvalues>
+          <attvalue for="0" value="São Paulo" />
+          <attvalue for="1" value="São Paulo" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-23.565587100000000000" />
+          <attvalue for="4" value="-46.570383000000000000" />
+          <attvalue for="5" value="Faculdade" />
+          <attvalue for="6" value="Privada" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="3.738760000000000000" />
+          <attvalue for="9" value="4" />
+          <attvalue for="10" value="0" />
+          <attvalue for="11" value="FFIA" />
+          <attvalue for="12" value="0.043478260869565216" />
+          <attvalue for="13" value="0.043478260869565216" />
+          <attvalue for="14" value="0.5" />
+          <attvalue for="15" value="0.5" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="17" value="0.0" />
+          <attvalue for="18" value="1" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="ventrix-2" label="ventrix-2">
+        <attvalues>
+          <attvalue for="0" value="Santa Rita do Sapucaí" />
+          <attvalue for="1" value="Minas Gerais" />
+          <attvalue for="2" value="Sudeste" />
+          <attvalue for="3" value="-22.247550600000000000" />
+          <attvalue for="4" value="-45.703988000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="338.837878" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.5593419506462985" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="1" />
+          <attvalue for="22" value="0" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+      <node id="way2-technology" label="way2-technology">
+        <attvalues>
+          <attvalue for="0" value="Florianópolis" />
+          <attvalue for="1" value="Santa Catarina" />
+          <attvalue for="2" value="Sul" />
+          <attvalue for="3" value="-27.544804400000000000" />
+          <attvalue for="4" value="-48.547637000000000000" />
+          <attvalue for="5" value="Startup" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="" />
+          <attvalue for="9" value="" />
+          <attvalue for="10" value="1" />
+          <attvalue for="12" value="0.041666666666666664" />
+          <attvalue for="14" value="0.3630816170861938" />
+          <attvalue for="16" value="0.0" />
+          <attvalue for="18" value="0" />
+          <attvalue for="19" value="0" />
+          <attvalue for="20" value="0" />
+          <attvalue for="21" value="0" />
+          <attvalue for="22" value="1" />
+          <attvalue for="23" value="0" />
+          <attvalue for="24" value="0" />
+          <attvalue for="25" value="0" />
+          <attvalue for="26" value="0" />
+          <attvalue for="27" value="0" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="UFC" target="4advisory" weight="1" />
+      <edge id="1" source="4advisory" target="UNIFOR" weight="4" />
+      <edge id="2" source="USP" target="aprex" weight="1" />
+      <edge id="3" source="USP" target="condovox" weight="1" />
+      <edge id="4" source="USP" target="devcase-technology" weight="2" />
+      <edge id="5" source="USP" target="malware-patrol" weight="1" />
+      <edge id="6" source="USP" target="neora" weight="1" />
+      <edge id="7" source="USP" target="uplexis-tecnologia" weight="1" />
+      <edge id="8" source="USP" target="ventrix-2" weight="2" />
+      <edge id="9" source="FACULDADE ANHANGÜERA DE PIRACICABA" target="b2w-digital" weight="1" />
+      <edge id="10" source="b2w-digital" target="UNESA" weight="1" />
+      <edge id="11" source="b2w-digital" target="UFRJ" weight="3" />
+      <edge id="12" source="b2w-digital" target="FACIC" weight="1" />
+      <edge id="13" source="UNESA" target="thinc-ce05" weight="1" />
+      <edge id="14" source="UFRJ" target="it-safe-information-security" weight="1" />
+      <edge id="15" source="condovox" target="CEUN-IMT" weight="1" />
+      <edge id="16" source="CEUN-IMT" target="way2-technology" weight="1" />
+      <edge id="17" source="FUMEC" target="emotion-studios" weight="1" />
+      <edge id="18" source="emotion-studios" target="UFMG" weight="2" />
+      <edge id="19" source="UFMG" target="eprimecare" weight="1" />
+      <edge id="20" source="IBMEC" target="foregon" weight="1" />
+      <edge id="21" source="foregon" target="TOLEDO PRUDENTE" weight="1" />
+      <edge id="22" source="ITA" target="ft-sistemas-s-a" weight="1" />
+      <edge id="23" source="ft-sistemas-s-a" target="PUCRS" weight="1" />
+      <edge id="24" source="ESPM" target="hive-17" weight="1" />
+      <edge id="25" source="FATIPUC" target="ivarejo" weight="2" />
+      <edge id="26" source="FGVSP" target="joca" weight="1" />
+      <edge id="27" source="FGVSP" target="pagseguro" weight="1" />
+      <edge id="28" source="FGVSP" target="uplexis-tecnologia" weight="1" />
+      <edge id="29" source="UFU" target="kyros-tecnologia" weight="2" />
+      <edge id="30" source="UNIA" target="madero" weight="1" />
+      <edge id="31" source="madero" target="UNI-FACEF" weight="1" />
+      <edge id="32" source="madero" target="CUFSA" weight="1" />
+      <edge id="33" source="PUCSP" target="neora" weight="1" />
+      <edge id="34" source="FURB" target="sances" weight="1" />
+      <edge id="35" source="uplexis-tecnologia" target="FFIA" weight="1" />
+    </edges>
+  </graph>
+</gexf>

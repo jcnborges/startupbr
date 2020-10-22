@@ -23,8 +23,9 @@ from pymongo import MongoClient
 # Declaracao de constantes
 #----------------------------------------------------------
 
-MONGODB_SERVER = "10.100.1.6"
+MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
+CARGOS = ["ceo", "founder", "owner", "fundador", "socio", "sócio"]
 
 #----------------------------------------------------------
 # Definicao de procedures 
@@ -49,9 +50,10 @@ def processarHistBusca(listHistBuscas, dicBusca):
                     if dicProfile != None:
                         break
             if dicProfile != None:                      
-                dicProfile.update({"_id_busca":id.inserted_id})
-                limparProfile(dicProfile)
-                salvarPerfilLinkedinMongoDB(dicProfile)       
+                dicProfile.update({"_id_busca":id.inserted_id})                
+                if validarCargo(seed["titulo_profissional"]) or validarCargo(dicProfile["titulo_profissional"]):
+                    limparProfile(dicProfile)
+                    salvarPerfilLinkedinMongoDB(dicProfile)
     except Exception as  e:
         writeConsole(str(e),  consoleType.ERROR)
 
@@ -95,7 +97,7 @@ def iterdict(d):
  
 def salvarBuscaMongoDB(dicBusca):
     client = MongoClient(MONGODB_SERVER, MONGODB_PORT)
-    db = client.einsteinbot
+    db = client.startupbr
     result = db.historico_buscas.find_one_and_delete({"id":dicBusca["id"]})
     if result != None and "_id" in result:
         db.perfis_linkedin.delete_many({"_id_busca":result["_id"]})
@@ -103,5 +105,11 @@ def salvarBuscaMongoDB(dicBusca):
     
 def salvarPerfilLinkedinMongoDB(dicProfile):
     client = MongoClient(MONGODB_SERVER, MONGODB_PORT)
-    db = client.einsteinbot
+    db = client.startupbr
     return db.perfis_linkedin.insert_one(dicProfile)    
+
+def validarCargo(cargo):    
+    for c in CARGOS:
+        if c in cargo.lower():
+            return True
+    return False

@@ -1,484 +1,72 @@
-library(rjson)
-library(tm)
-library(SnowballC)
-library(wordcloud)
-library(RColorBrewer)
-library(dplyr)
 library(ggplot2)
-library(igraph)
-library(rgexf)
-library(googleway)
+library(scales)
+library(dplyr)
+library(ggthemes)
 
-# ------------------------------------------------------------
-# Sophia, Inteligência Artificial
-# Autor: Júlio César (julio.nardelli@pucpr.br)
-# Data: 06/03/2020
-# Descrição: Análise word cloud, afiliação
-# ------------------------------------------------------------
+regions = c("Centro-Oeste", "Nordeste", "Norte" , "Sudeste", "Sul")
 
-SOPHIA_BASE_DIR = "C:\\repo\\dmp-source\\04_PYTHON\\Einsteinbot\\sophIA\\"
-JSON_FILE_NAME = "psicologia_cwb.json"
-CORPUS_TXT = "corpus.txt"
-REMOVE_WORDS_TXT = "remove_words.txt"
-GEXF_FILE = "rede.gexf"
-API_KEY <- 'AIzaSyBhWM0raXVoXZwHg7WrjAeGMOtSMeorCZo'
+if (exists("dados"))
+  remove(dados)
 
-# ------------------------------------------------------------
-# 
-# Word Cloud
-#
-# ------------------------------------------------------------
-
-# ESCOLHA A OPCAO:
-# 1 - carreira_profissional > descricao_cargo
-# 2 - habilidades
-# 3 - certificacoes
-# 4 - cursos
-# 5 - educacao > nome_curso
-# 6 - educacao > area_conhecimento
-# 7 - educacao > nome_instituicao_ensino
-# 8 - idiomas
-# 9 - carreira_profissional > nome_empresa
-opcao = 2
-cargo = "clínic"
-title = "<<escolha opção>>"
-filtro_carreira = TRUE
-homogeneizacao = TRUE
-
-jsonPerfis <- fromJSON(,paste(SOPHIA_BASE_DIR, JSON_FILE_NAME, sep = ''))
-
-# ------------------------------------------------------------
-# 
-# Homogeneização dos nomes
-#
-# ------------------------------------------------------------
-
-if (homogeneizacao) {
-
-  # ------------------------------------------------------------
-  # Nome de instituições de ensino
-  # ------------------------------------------------------------
-  for (i in 1:length(jsonPerfis)) {
-    if (length(jsonPerfis[[i]]$educacao) > 0) {
-      for (j in 1:length(jsonPerfis[[i]]$educacao)) {
-        if (!is.null(jsonPerfis[[i]]$educacao[[j]]$schoolName)) {
-          res <- google_places(search_string = jsonPerfis[[i]]$educacao[[j]]$schoolName, key = API_KEY, language = "pt-br")
-          if (res$status != "ZERO_RESULTS") {
-            jsonPerfis[[i]]$educacao[[j]]$schoolName <- res$results[1,]$name
-            jsonPerfis[[i]]$educacao[[j]]$location <- res$results[1,]$geometry$location
-            print(res$results[1,]$name)
-          }
-        }
-      }
-    }
-  }
+for (i in 1:length(regions)) {
+  region = regions[i]
   
-  # ------------------------------------------------------------
-  # Nome de empresas
-  # ------------------------------------------------------------
-  for (i in 1:length(jsonPerfis)) {
-    if (length(jsonPerfis[[i]]$carreira_profissional) > 0) {
-      for (j in 1:length(jsonPerfis[[i]]$carreira_profissional)) {
-        if (!is.null(jsonPerfis[[i]]$carreira_profissional[[j]]$companyName)) {
-          res <- google_places(search_string = jsonPerfis[[i]]$carreira_profissional[[j]]$companyName, key = API_KEY, language = "pt-br")
-          if (res$status != "ZERO_RESULTS") {
-            jsonPerfis[[i]]$carreira_profissional[[j]]$companyName <- res$results[1,]$name
-            jsonPerfis[[i]]$carreira_profissional[[j]]$location <- res$results[1,]$geometry$location
-            print(res$results[1,]$name)
-          }
-        }
-      }
-    }
-  }
-  write(toJSON(jsonPerfis), paste(SOPHIA_BASE_DIR, JSON_FILE_NAME, sep = ''))
-}
-
-skills = NULL
-
-if (opcao == 1) {
-  # carreira_profissional > descricao_cargo
-  title = "Descrição do Cargo"
-  for (i in 1:length(jsonPerfis)) {
-    if (length(jsonPerfis[[i]]$carreira_profissional) > 0) {
-      for (j in 1:length(jsonPerfis[[i]]$carreira_profissional)) {
-        if (!filtro_carreira || grepl(pattern = cargo, x = jsonPerfis[[i]]$carreira_profissional[[j]]$title, ignore.case = TRUE)) {
-          skills = paste(skills, jsonPerfis[[i]]$carreira_profissional[[j]]$description, sep ="\n")
-        }
-      }
-    }
-  }
-} else if (opcao == 2) {
-  # habilidades
-  title = "Habilidades"
-  for (i in 1:length(jsonPerfis)) {
-    if (length(jsonPerfis[[i]]$habilidades) > 0) {
-      for (j in 1:length(jsonPerfis[[i]]$habilidades)) {
-        skills = paste(skills, jsonPerfis[[i]]$habilidades[[j]]$name, sep ="\n")
-      }
-    }
-  }
-} else if (opcao == 3) {
-  # certificacoes
-  title = "Certificações"
-  for (i in 1:length(jsonPerfis)) {
-    if (length(jsonPerfis[[i]]$certificacoes) > 0) {
-      for (j in 1:length(jsonPerfis[[i]]$certificacoes)) {
-        skills = paste(skills, jsonPerfis[[i]]$certificacoes[[j]]$name, sep ="\n")
-      }
-    }
-  }  
-} else if (opcao == 4) {
-  # cursos
-  title = "Curso de Curta Duração"
-  for (i in 1:length(jsonPerfis)) {
-    if (length(jsonPerfis[[i]]$cursos) > 0) {
-      for (j in 1:length(jsonPerfis[[i]]$cursos)) {
-        skills = paste(skills, jsonPerfis[[i]]$cursos[[j]]$name, sep ="\n")
-      }
-    }
-  }  
-} else if (opcao == 5) {
-  # educacao > nome_curso
-  title = "Formação Acadêmica"
-  for (i in 1:length(jsonPerfis)) {
-    if (length(jsonPerfis[[i]]$educacao) > 0) {
-      for (j in 1:length(jsonPerfis[[i]]$educacao)) {
-        skills = paste(skills, jsonPerfis[[i]]$educacao[[j]]$degreeName, sep ="\n")
-      }
-    }
-  }  
-} else if (opcao == 6) {
-  # educacao > area_conhecimento
-  title = "Área do Conhecimento"
-  for (i in 1:length(jsonPerfis)) {
-    if (length(jsonPerfis[[i]]$educacao) > 0) {
-      for (j in 1:length(jsonPerfis[[i]]$educacao)) {
-        skills = paste(skills, jsonPerfis[[i]]$educacao[[j]]$fieldOfStudy, sep ="\n")
-      }
-    }
-  }  
-} else if (opcao == 7) {
-  # educacao > nome_instituicao_ensino
-  title = "Instituição de Ensino"
-  for (i in 1:length(jsonPerfis)) {
-    if (length(jsonPerfis[[i]]$educacao) > 0) {
-      for (j in 1:length(jsonPerfis[[i]]$educacao)) {
-        skills = paste(skills, jsonPerfis[[i]]$educacao[[j]]$schoolName, sep ="\n")
-      }
-    }
-  }  
-} else if (opcao == 8) {
-  # educacao > linguas
-  title = "Idiomas"
-  for (i in 1:length(jsonPerfis)) {
-    if (length(jsonPerfis[[i]]$linguas) > 0) {
-      for (j in 1:length(jsonPerfis[[i]]$linguas)) {
-        skills = paste(skills, jsonPerfis[[i]]$linguas[[j]]$name, sep ="\n")
-      }
-    }
-  }  
-} else  if (opcao == 9) {
-  # carreira_profissional > nome_empresa
-  title = "Empresas"
-  for (i in 1:length(jsonPerfis)) {
-    if (length(jsonPerfis[[i]]$carreira_profissional) > 0) {
-      for (j in 1:length(jsonPerfis[[i]]$carreira_profissional)) {
-        if (!filtro_carreira || grepl(pattern = cargo, x = jsonPerfis[[i]]$carreira_profissional[[j]]$title, ignore.case = TRUE)) {
-          skills = paste(skills, jsonPerfis[[i]]$carreira_profissional[[j]]$companyName, sep ="\n")
-        }
-      }
-    }
+  idh_by_state <- idh_by_state <- read.csv("~/Documentos/Source-Python/startupbr/src/datamining/csv/analysis/idh_by_state.csv", sep=";")
+  startup_growing_tax <- read.csv("~/Documentos/Source-Python/startupbr/src/datamining/csv/analysis/startup_growing_tax_by_state.csv", sep=";")
+  pib_growing_tax <- read.csv("~/Documentos/Source-Python/startupbr/src/datamining/csv/analysis/pib_growing_tax_by_state.csv", header=TRUE, sep=";")
+  pop_by_state <- read.csv("~/Documentos/Source-Python/startupbr/src/datamining/csv/analysis/pop_by_state.csv", sep=";")
+  
+  idh_by_state = idh_by_state[idh_by_state$Region == region & idh_by_state$Ano == 2017,]
+  startup_growing_tax = startup_growing_tax[startup_growing_tax$Region == region & startup_growing_tax$Ano == 2019,]
+  pib_growing_tax = pib_growing_tax[pib_growing_tax$Region == region & pib_growing_tax$Ano == 2017,]
+  pop_by_state = pop_by_state[pop_by_state$Region == region,]
+  
+  idh_by_state <- idh_by_state %>%
+    arrange(desc(idh_by_state$State))
+  
+  startup_growing_tax <- startup_growing_tax %>%
+    arrange(desc(startup_growing_tax$State))
+  
+  pib_growing_tax <- pib_growing_tax %>%
+    arrange(desc(pib_growing_tax$State))
+  
+  pop_by_state <- pop_by_state %>%
+    arrange(desc(pop_by_state$State))
+  
+  startup_growing_tax <- startup_growing_tax %>%
+    mutate(pct = startup_growing_tax$QuantityStartups / sum(startup_growing_tax$QuantityStartups))
+  
+  pib_growing_tax <- pib_growing_tax %>%
+    mutate(pct = pib_growing_tax$PIB / sum(pib_growing_tax$PIB))
+  
+  pop_by_state <- pop_by_state %>%
+    mutate(pct = pop_by_state$Population / sum(pop_by_state$Population))
+  
+  df = data.frame(
+    pct_startup = startup_growing_tax$pct
+    ,idh = idh_by_state$IDHM
+    ,idh_edu = idh_by_state$IDHMEducacao
+    ,idh_long = idh_by_state$IDHMLongividade
+    ,idh_renda = idh_by_state$IDHMRenda
+    ,pct_pib = pib_growing_tax$pct
+    ,pct_pop = pop_by_state$pct
+    ,estado = idh_by_state$State
+  )
+  
+  if (exists("dados")) {
+    dados = union(dados, df)
+  } else {
+    dados = df
   }
 }
 
-fileConn <- file(paste(SOPHIA_BASE_DIR, CORPUS_TXT, sep = ''), encoding="UTF-8")
-writeLines(skills, fileConn)
-close(fileConn)
+summary(dados)
+plot(dados)
+l = lm(pct_startup ~ idh + pct_pib + pct_pop, data = dados)
+summary(l)
 
-text <- readLines(paste(SOPHIA_BASE_DIR, CORPUS_TXT, sep = ''), encoding="UTF-8")
-corpus <- iconv(text, from="UTF-8", to="ASCII//TRANSLIT")
-docs <- Corpus(VectorSource(corpus))
-# inspect(docs)
-
-remove_words <- readLines(paste(SOPHIA_BASE_DIR, REMOVE_WORDS_TXT, sep = ''), encoding="UTF-8")
-
-# Convert the text to lower case
-docs <- tm_map(docs, content_transformer(tolower))
-# Remove numbers
-docs <- tm_map(docs, removeNumbers)
-# Remove english common stopwords
-docs <- tm_map(docs, removeWords, stopwords("english"))
-# Remove portuguese common stopwords
-docs <- tm_map(docs, removeWords, iconv(stopwords("portuguese"), from="UTF-8", to="ASCII//TRANSLIT"))
-# Remove your own stop word
-# specify your stopwords as a character vector
-docs <- tm_map(docs, removeWords, remove_words) 
-# Remove punctuations
-docs <- tm_map(docs, removePunctuation)
-# Eliminate extra white spaces
-docs <- tm_map(docs, stripWhitespace)
-# Text stemming
-#docs <- tm_map(docs, stemDocument)
-
-dtm <- TermDocumentMatrix(docs)
-m <- as.matrix(dtm)
-v <- sort(rowSums(m),decreasing=TRUE)
-d <- data.frame(word = names(v),freq=v)
-head(d, 100)
-
-dev.new()
-
-set.seed(1234)
-plot.new()
-layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
-par(mar=rep(0, 4))
-plot.new()
-text(x=0.5, y=0.5, paste(title, cargo, sep = " - "))
-wordcloud(words = d$word, freq = d$freq, min.freq = 1,
-          max.words=100, random.order=FALSE, rot.per=0.35, 
-          colors=brewer.pal(8, "Dark2"), main="Title")
-
-# ------------------------------------------------------------
-# 
-# Afiliação Instituições de Ensino
-#
-# ------------------------------------------------------------
-degree <- data.frame()
-for (i in 1:length(jsonPerfis)) {
-  if (length(jsonPerfis[[i]]$educacao) > 0) {
-    for (j in 1:length(jsonPerfis[[i]]$educacao)) {
-      aux <- data.frame(
-        "schoolName" = ifelse(!is.null(jsonPerfis[[i]]$educacao[[j]]$schoolName), jsonPerfis[[i]]$educacao[[j]]$schoolName, "N/I") 
-        ,"degreeName" = ifelse(!is.null(jsonPerfis[[i]]$educacao[[j]]$degreeName), jsonPerfis[[i]]$educacao[[j]]$degreeName, "N/I")
-        ,"fieldOfStudy" = ifelse(!is.null(jsonPerfis[[i]]$educacao[[j]]$fieldOfStudy), jsonPerfis[[i]]$educacao[[j]]$fieldOfStudy, "N/I") 
-        ,"start" = ifelse(!is.null(jsonPerfis[[i]]$educacao[[j]]$dateRange$start$year), jsonPerfis[[i]]$educacao[[j]]$dateRange$start$year, 0)
-        ,"end" = ifelse(!is.null(jsonPerfis[[i]]$educacao[[j]]$dateRange$end$year), jsonPerfis[[i]]$educacao[[j]]$dateRange$end$year, 0)
-        ,stringsAsFactors = TRUE
-      )      
-      degree = rbind(degree, aux)
-    }
-  }
-}  
-top10 <- data.frame(summarize(group_by(degree, schoolName), n()))
-top10 <- top10[top10$schoolName != "N/I",]
-top10 <- top10[order(-top10$n..),]
-top10 <- top10[1:10,]
-dev.new()
-p <- ggplot(data = top10)
-p <- p + geom_bar(mapping = aes(x = reorder(top10$schoolName, top10$n..), y = top10$n..), stat = "identity", fill = "steelblue")
-p <- p + ggtitle(paste("TOP 10 Instituições de Ensino", cargo, sep = " - ")) + xlab("Instituição de Ensino") + ylab("Frequência")
-p <- p + coord_flip()
-p
-
-top10 <- data.frame(summarize(group_by(degree, degreeName), n()))
-top10 <- top10[top10$degreeName != "N/I",]
-top10 <- top10[order(-top10$n..),]
-top10 <- top10[1:10,]
-dev.new()
-p <- ggplot(data = top10)
-p <- p + geom_bar(mapping = aes(x = reorder(top10$degreeName, top10$n..), y = top10$n..), stat = "identity", fill = "steelblue")
-p <- p + ggtitle(paste("TOP 10 Formação Acadêmica", cargo, sep = " - ")) + xlab("Formação Acadêmica") + ylab("Frequência")
-p <- p + coord_flip()
-p
-
-top10 <- data.frame(summarize(group_by(degree, fieldOfStudy), n()))
-top10 <- top10[top10$fieldOfStudy != "N/I",]
-top10 <- top10[order(-top10$n..),]
-top10 <- top10[1:10,]
-dev.new()
-p <- ggplot(data = top10)
-p <- p + geom_bar(mapping = aes(x = reorder(top10$fieldOfStudy, top10$n..), y = top10$n..), stat = "identity", fill = "steelblue")
-p <- p + ggtitle(paste("TOP 10 Formação Acadêmica", cargo, sep = " - ")) + xlab("Formação Acadêmica") + ylab("Frequência")
-p <- p + coord_flip()
-p
-
-# ------------------------------------------------------------
-# 
-# Experiência Profissional
-#
-# ------------------------------------------------------------
-job <- data.frame()
-for (i in 1:length(jsonPerfis)) {
-  if (length(jsonPerfis[[i]]$carreira_profissional) > 0) {
-    for (j in 1:length(jsonPerfis[[i]]$carreira_profissional)) {
-      if (!filtro_carreira || grepl(pattern = cargo, x = jsonPerfis[[i]]$carreira_profissional[[j]]$title, ignore.case = TRUE)) {
-        aux <- data.frame(
-          "companyName" = ifelse(!is.null(jsonPerfis[[i]]$carreira_profissional[[j]]$companyName), jsonPerfis[[i]]$carreira_profissional[[j]]$companyName, "N/I") 
-          ,"title" = ifelse(!is.null(jsonPerfis[[i]]$carreira_profissional[[j]]$title), jsonPerfis[[i]]$carreira_profissional[[j]]$title, "N/I")
-          ,"start" = ifelse(!is.null(jsonPerfis[[i]]$carreira_profissional[[j]]$dateRange$start$year), jsonPerfis[[i]]$carreira_profissional[[j]]$dateRange$start$year, 0)
-          ,"end" = ifelse(!is.null(jsonPerfis[[i]]$carreira_profissional[[j]]$dateRange$end$year), jsonPerfis[[i]]$carreira_profissional[[j]]$dateRange$end$year, 0)        
-        )      
-        job = rbind(job, aux)
-      }
-    }
-  }
-} 
-
-# TOP 10 empresas
-if (cargo == "direito") {
-  job[grepl(pattern = "advogados", x = job$companyName, ignore.case = TRUE) & grepl(pattern = "associados", x = job$companyName, ignore.case = TRUE), ]$companyName <- "Escritório Advocacia"
-}
-top10 <- data.frame(summarize(group_by(job, companyName), n()))
-top10 <- top10[top10$companyName != "N/I",]
-top10 <- top10[order(-top10$n..),]
-top10 <- top10[1:10,]
-dev.new()
-p <- ggplot(data = top10)
-p <- p + geom_bar(mapping = aes(x = reorder(top10$companyName, top10$n..), y = top10$n..), stat = "identity", fill = "steelblue")
-p <- p + ggtitle(paste("TOP 10 Empresas", cargo, sep = " - ")) + xlab("Nome da Empresa") + ylab("Frequência")
-p <- p + coord_flip()
-p
-
-# TOP 10 cargos
-top10 <- data.frame(summarize(group_by(job, title), n()))
-top10 <- top10[top10$title != "N/I",]
-top10 <- subset(top10, !grepl("estagiá", top10$title, ignore.case = TRUE))
-top10 <- top10[order(-top10$n..),]
-top10 <- top10[1:10,]
-View(top10)
-dev.new()
-p <- ggplot(data = top10)
-p <- p + geom_bar(mapping = aes(x = reorder(top10$title, top10$n..), y = top10$n..), stat = "identity", fill = "steelblue")
-p <- p + ggtitle(paste("TOP 10 Cargos", cargo, sep = " - ")) + xlab("Nome do Cargo") + ylab("Frequência")
-p <- p + coord_flip()
-p
-
-# ------------------------------------------------------------
-# 
-# Certificações
-#
-# ------------------------------------------------------------
-certification <- data.frame()
-for (i in 1:length(jsonPerfis)) {
-  if (length(jsonPerfis[[i]]$certificacoes) > 0) {
-    for (j in 1:length(jsonPerfis[[i]]$certificacoes)) {
-      aux <- data.frame(
-        "name" = ifelse(!is.null(jsonPerfis[[i]]$certificacoes[[j]]$name), jsonPerfis[[i]]$certificacoes[[j]]$name, "N/I") 
-        ,stringsAsFactors = TRUE
-      )      
-      certification = rbind(certification, aux)
-    }
-  }
-}  
-top10 <- data.frame(summarize(group_by(certification, name), n()))
-top10 <- top10[top10$name != "N/I",]
-top10 <- top10[order(-top10$n..),]
-top10 <- top10[1:10,]
-dev.new()
-p <- ggplot(data = top10)
-p <- p + geom_bar(mapping = aes(x = reorder(top10$name, top10$n..), y = top10$n..), stat = "identity", fill = "steelblue")
-p <- p + ggtitle(paste("TOP 10 Certificados", cargo, sep = " - ")) + xlab("Certificados") + ylab("Frequência")
-p <- p + coord_flip()
-p
-
-# ------------------------------------------------------------
-# 
-# Cursos
-#
-# ------------------------------------------------------------
-courses <- data.frame()
-for (i in 1:length(jsonPerfis)) {
-  if (length(jsonPerfis[[i]]$cursos) > 0) {
-    for (j in 1:length(jsonPerfis[[i]]$cursos)) {
-      aux <- data.frame(
-        "name" = ifelse(!is.null(jsonPerfis[[i]]$cursos[[j]]$name), jsonPerfis[[i]]$cursos[[j]]$name, "N/I") 
-        ,stringsAsFactors = TRUE
-      )      
-      courses = rbind(courses, aux)
-    }
-  }
-}  
-top10 <- data.frame(summarize(group_by(courses, name), n()))
-top10 <- top10[top10$name != "N/I",]
-top10 <- top10[order(-top10$n..),]
-top10 <- top10[1:10,]
-dev.new()
-p <- ggplot(data = top10)
-p <- p + geom_bar(mapping = aes(x = reorder(top10$name, top10$n..), y = top10$n..), stat = "identity", fill = "steelblue")
-p <- p + ggtitle(paste("TOP 10 Cursos", cargo, sep = " - ")) + xlab("Cursos") + ylab("Frequência")
-p <- p + coord_flip()
-p
-
-# ------------------------------------------------------------
-# 
-# Competências e Recomendações
-#
-# ------------------------------------------------------------
-competences <- data.frame()
-for (i in 1:length(jsonPerfis)) {
-  if (length(jsonPerfis[[i]]$habilidades) > 0) {
-    for (j in 1:length(jsonPerfis[[i]]$habilidades)) {
-      aux <- data.frame(
-        "name" = ifelse(!is.null(jsonPerfis[[i]]$habilidades[[j]]$name), jsonPerfis[[i]]$habilidades[[j]]$name, "N/I") 
-        ,stringsAsFactors = TRUE
-      )      
-      competences = rbind(competences, aux)
-    }
-  }
-}  
-top10 <- data.frame(summarize(group_by(competences, name), n()))
-top10 <- top10[top10$name != "N/I" & !(top10$name %in% c("Microsoft Excel", "Microsoft Office", "Microsoft PowerPoint", "Microsoft Word")),]
-top10 <- top10[order(-top10$n..),]
-top10 <- top10[1:20,]
-dev.new()
-p <- ggplot(data = top10)
-p <- p + geom_bar(mapping = aes(x = reorder(top10$name, top10$n..), y = top10$n..), stat = "identity", fill = "steelblue")
-p <- p + ggtitle(paste("TOP 20 Competências", cargo, sep = " - ")) + xlab("Competências") + ylab("Frequência")
-p <- p + coord_flip()
-p
-
-# ------------------------------------------------------------
-# 
-# Rede Instituição de Ensino e Empresa
-#
-# ------------------------------------------------------------
-g <- make_empty_graph(directed = FALSE)
-for (i in 1:length(jsonPerfis)) {
-  if (length(jsonPerfis[[i]]$educacao) > 0) {
-    for (j in 1:length(jsonPerfis[[i]]$educacao)) {
-      degree <- data.frame(
-        "schoolName" = ifelse(!is.null(jsonPerfis[[i]]$educacao[[j]]$schoolName), jsonPerfis[[i]]$educacao[[j]]$schoolName, "N/I") 
-        ,"degreeName" = ifelse(!is.null(jsonPerfis[[i]]$educacao[[j]]$degreeName), jsonPerfis[[i]]$educacao[[j]]$degreeName, "N/I")
-        ,"fieldOfStudy" = ifelse(!is.null(jsonPerfis[[i]]$educacao[[j]]$fieldOfStudy), jsonPerfis[[i]]$educacao[[j]]$fieldOfStudy, "N/I") 
-        ,"start" = ifelse(!is.null(jsonPerfis[[i]]$educacao[[j]]$dateRange$start$year), jsonPerfis[[i]]$educacao[[j]]$dateRange$start$year, 0)
-        ,"end" = ifelse(!is.null(jsonPerfis[[i]]$educacao[[j]]$dateRange$end$year), jsonPerfis[[i]]$educacao[[j]]$dateRange$end$year, 0)
-        ,stringsAsFactors = FALSE
-      ) 
-      if (length(jsonPerfis[[i]]$carreira_profissional) > 0) {
-        for (k in 1:length(jsonPerfis[[i]]$carreira_profissional)) {
-          if (!filtro_carreira || grepl(pattern = cargo, x = jsonPerfis[[i]]$carreira_profissional[[k]]$title, ignore.case = TRUE)) {
-            job <- data.frame(
-              "companyName" = ifelse(!is.null(jsonPerfis[[i]]$carreira_profissional[[k]]$companyName), jsonPerfis[[i]]$carreira_profissional[[k]]$companyName, "N/I") 
-              ,"title" = ifelse(!is.null(jsonPerfis[[i]]$carreira_profissional[[k]]$title), jsonPerfis[[i]]$carreira_profissional[[k]]$title, "N/I")
-              ,"start" = ifelse(!is.null(jsonPerfis[[i]]$carreira_profissional[[k]]$dateRange$start$year), jsonPerfis[[i]]$carreira_profissional[[k]]$dateRange$start$year, 0)
-              ,"end" = ifelse(!is.null(jsonPerfis[[i]]$carreira_profissional[[k]]$dateRange$end$year), jsonPerfis[[i]]$carreira_profissional[[k]]$dateRange$end$year, 0)
-              ,stringsAsFactors = FALSE
-            )      
-            if (degree$end != 0 && degree$end <= job$start) {
-              schoolName <- iconv(degree$schoolName, from="UTF-8", to="ASCII//TRANSLIT")
-              companyName <- iconv(job$companyName, from="UTF-8", to="ASCII//TRANSLIT")
-              schoolName <- sub("&", '', schoolName)
-              companyName <- sub("&", '', companyName)
-              v1 <- vertex(name = schoolName, type = FALSE)
-              v2 <- vertex(name = companyName, type = TRUE)
-              if (is.na(match(schoolName, V(g)$name))) {
-                g <- g + v1
-                id1 <- as.numeric(V(g)[schoolName])
-              }
-              if (is.na(match(companyName, V(g)$name))) {
-                g <- g + v2
-                id2 <- as.numeric(V(g)[companyName])
-              }
-              if (g[id1, id2] == 0) {
-                g <- g + edge(id1, id2, "weight" = 2)
-              }
-              g[id1, id2] <- g[id1, id2] + 1
-            }
-          }
-        }
-      }
-    }
-  }
-}
-gexf <- igraph.to.gexf(g)
-print(gexf, paste(SOPHIA_BASE_DIR, GEXF_FILE, sep = ''))
+plot <- ggplot(data = dados, aes(x = idh, y = pct_startup)) + geom_point()
+plot <- plot + geom_abline(slope = l$coefficients[2], intercept = l$coefficients[1], color = "blue", size = 1)
+plot <- plot + ggtitle(paste("RÂ² = ", signif(summary(l)$adj.r.squared, 5), " p-valor = ", signif(summary(l)$coef[2,4], 5)))
+plot <- plot + theme(plot.title = element_text(size = 10)) + xlab("IDH") + ylab("Startups")
+plot

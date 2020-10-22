@@ -28,7 +28,7 @@ from bs4 import BeautifulSoup
 LINKEDIN_URL = 'https://www.linkedin.com'
 # suporta no máximo 5 operadores lógicos
 TITLE_FILTER = '&origin=FACETED_SEARCH&title=(ceo%20OR%20founder%20OR%20owner%20OR%20fundador%20OR%20socio)%20NOT%20(product%20owner)'
-QTD_BUSCA_DORMIR = 45
+QTD_BUSCA_DORMIR = 30
 
 class situacaoBusca:
     NAO_PROCESSADO = 'Não processado'
@@ -118,7 +118,7 @@ def iniciarWebCrawlerTodasBuscas(listHistBuscas):
         for dic in reversed(listHistBuscas):        
             writeConsole("Processando busca {0} de {1} ({2:.2f}%)...".format(n, len(listHistBuscas), 100 * (n / len(listHistBuscas))),  consoleType.WARNING)                
             writeConsole("{0}".format(strBusca(dic)),  consoleType.SUCCESS,  False)                
-            if dic["situacao"] == situacaoBusca.PROCESSADO_SUCESSO and ("situacaoWebCrawler" not in dic.keys() or dic["situacaoWebCrawler"] != situacaoWebCrawler.PROCESSADO_SUCESSO):
+            if dic["situacao"] == situacaoBusca.PROCESSADO_SUCESSO and ("situacaoWebCrawler" not in dic.keys() or dic["situacaoWebCrawler"] not in [situacaoWebCrawler.PROCESSADO_SUCESSO, situacaoWebCrawler.EM_EXECUCAO]) and n not in [2966, 3919]:
                 if q == QTD_BUSCA_DORMIR - 1:
                     # dorme (5 ~ 15 min) um tempo para evitar bloqueios
                     q = 1
@@ -134,6 +134,21 @@ def iniciarWebCrawlerTodasBuscas(listHistBuscas):
             driver.close()
         except Exception as  e:
             writeConsole(str(e),  consoleType.ERROR)          
+
+def iniciarProcessamentoTodasBuscas(listHistBuscas):
+    writeConsole("=====================================",  consoleType.WARNING,  False)
+    writeConsole("  4. Pré-processamento Todas Buscas  ",  consoleType.WARNING,  False)
+    writeConsole("=====================================",  consoleType.WARNING,  False)
+    n = 1
+    try:
+        for dic in reversed(listHistBuscas):        
+            writeConsole("Pré-processando busca {0} de {1} ({2:.2f}%)...".format(n, len(listHistBuscas), 100 * (n / len(listHistBuscas))),  consoleType.WARNING)    
+            writeConsole("{0}".format(strBusca(dic)),  consoleType.SUCCESS,  False)
+            if dic["situacao"] == situacaoBusca.PROCESSADO_SUCESSO and "situacaoWebCrawler" in dic.keys():
+                processarHistBusca(listHistBuscas, dic)
+            n += 1
+    except Exception as  e:
+            writeConsole(str(e),  consoleType.ERROR)     
             
 def strBusca(dicBusca):
     str = "{\n"
