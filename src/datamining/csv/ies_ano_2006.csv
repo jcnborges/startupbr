@@ -1,0 +1,14 @@
+ano;ies;cidade;estado;regiao;categoria1;categoria2;degree;closeness;betweenness
+2006;USP;São Paulo;São Paulo;Sudeste;Universidade;Pública Estadual;0.3157894736842105;0.792626728110599;0.11699779249448124
+2006;FATIPUC;Canoas;Rio Grande do Sul;Sul;Faculdade;Privada sem fins lucrativos;0.05263157894736842;1.3870967741935483;0.0
+2006;ESPM;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.05263157894736842;1.3870967741935483;0.0
+2006;FGVSP;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.15789473684210525;0.5369406867845994;0.046357615894039736
+2006;PUCSP;São Paulo;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.05263157894736842;1.3870967741935483;0.0
+2006;UNESA;Curitiba;Paraná;Sul;Universidade;Privada com fins lucrativos;0.10526315789473684;0.7926267281105991;0.006622516556291391
+2006;UFMG;Belo Horizonte;Minas Gerais;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.05263157894736842;1.3870967741935483;0.0
+2006;PUCRS;Porto Alegre;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.05263157894736842;1.3870967741935483;0.0
+2006;FFIA;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.05263157894736842;0.47557603686635946;0.0
+2006;UFU;Uberlândia;Minas Gerais;Sudeste;Universidade;Pública Federal;0.05263157894736842;1.3870967741935483;0.0
+2006;UNIFOR;Fortaleza;Ceará;Nordeste;Universidade;Privada sem fins lucrativos;0.05263157894736842;1.3870967741935483;0.0
+2006;CEUN-IMT;São Caetano do Sul;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.10526315789473684;0.4498692240627724;0.024282560706401765
+2006;UFRJ;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.10526315789473684;0.7926267281105991;0.006622516556291391

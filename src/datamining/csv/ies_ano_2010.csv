@@ -1,0 +1,79 @@
+ano;ies;cidade;estado;regiao;categoria1;categoria2;degree;closeness;betweenness
+2010;UEL;Londrina;Paraná;Sul;Universidade;Pública Estadual;0.009523809523809525;0.25164165103189495;0.0
+2010;UNIVALI;Itajaí;Santa Catarina;Sul;Universidade;Privada sem fins lucrativos;0.009523809523809525;0.3012352610892757;0.0
+2010;FASM;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;UNICAP;Recife;Pernambuco;Nordeste;Universidade;Privada sem fins lucrativos;0.01904761904761905;0.2937311798521763;0.012454905104655013
+2010;FGVPR;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.009523809523809525;0.9487179487179488;0.0
+2010;UFRGS;Porto Alegre;Rio Grande do Sul;Sul;Universidade;Pessoa Jurídica de Direito Público - Federal;0.0380952380952381;0.24860982391102873;0.04739538855678907
+2010;UAM;São Paulo;São Paulo;Sudeste;Universidade;Privada com fins lucrativos;0.009523809523809525;0.27330616403464086;0.0
+2010;UNIFOR;Fortaleza;Ceará;Nordeste;Universidade;Privada sem fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;UNIA;Santo André;São Paulo;Sudeste;Centro Universitário;Privada com fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;CEUN-IMT;São Caetano do Sul;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.01904761904761905;0.2595549104983067;0.007014761498109064
+2010;UFRJ;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.05714285714285715;0.30797933409873707;0.0611097556016429
+2010;FACULDADE CNEC VARGINHA;Varginha;Minas Gerais;Sudeste;Faculdade;Privada sem fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;FEBASP;São Paulo;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.01904761904761905;0.2937311798521763;0.012454905104655013
+2010;FURB;Blumenau;Santa Catarina;Sul;Universidade;Pública Municipal;0.01904761904761905;1.0673076923076923;0.0001219958521410272
+2010;FGVRS;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.01904761904761905;0.18673860076575008;0.013907527144077102
+2010;FCL;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.009523809523809525;0.22737868192413646;0.0
+2010;MACKENZIE;São Paulo;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.01904761904761905;0.22428929765886285;0.013907527144077102
+2010;Centro Universitário UNIBTA;São Paulo;São Paulo;Sudeste;Centro Universitário;Privada com fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;EEP/FUMEP;Piracicaba;São Paulo;Sudeste;Faculdade;Pública Municipal;0.009523809523809525;0.22737868192413646;0.0
+2010;ESPM;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.0761904761904762;0.33147976521470496;0.07994213911012743
+2010;FGP;Pederneiras;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.009523809523809525;0.2662531017369727;0.0
+2010;UNIPAC;Itajubá;Minas Gerais;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.009523809523809525;0.21002153063221762;0.0
+2010;UCPEL;Pelotas;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.009523809523809525;0.14845047039291642;0.0
+2010;PUCPR;Curitiba;Paraná;Sul;Universidade;Privada sem fins lucrativos;0.009523809523809525;0.9487179487179488;0.0
+2010;FA-FAAP;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.08571428571428572;0.3557692307692308;0.142538937009475
+2010;ITA;São José dos Campos;São Paulo;Sudeste;Faculdade;Pública Federal;0.009523809523809525;1.4230769230769231;0.0
+2010;FGV-EAESP;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.009523809523809525;0.22307692307692303;0.0
+2010;IBMEC;Curitiba;Paraná;Sul;Faculdade;Privada com fins lucrativos;0.01904761904761905;0.18974358974358974;0.007014761498109064
+2010;UNAERP;Ribeirão Preto;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.009523809523809525;0.25633062589584327;0.0
+2010;FATIPUC;Canoas;Rio Grande do Sul;Sul;Faculdade;Privada sem fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;UNA;Belo Horizonte;Minas Gerais;Sudeste;Centro Universitário;Privada com fins lucrativos;0.009523809523809525;0.17826881541784348;0.0
+2010;FTEC Porto Alegre;Porto Alegre;Rio Grande do Sul;Sul;Faculdade;Privada com fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;UNIFIEO;Osasco;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;UDESC;Florianópolis;Santa Catarina;Sul;Universidade;Pública Estadual;0.009523809523809525;1.4230769230769231;0.0
+2010;UNISINOS;São Leopoldo;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.028571428571428574;0.2916553411253058;0.03173126637503849
+2010;Uniopet;Curitiba;Paraná;Sul;Centro Universitário;Privada com fins lucrativos;0.009523809523809525;0.2662531017369727;0.0
+2010;CESUPA;Belém;Pará;Norte;Centro Universitário;Privada sem fins lucrativos;0.009523809523809525;0.18506381510865816;0.0
+2010;ISAE;Curitiba;Paraná;Sul;Faculdade;Privada sem fins lucrativos;0.009523809523809525;0.25164165103189495;0.0
+2010;UFU;Uberlândia;Minas Gerais;Sudeste;Universidade;Pública Federal;0.01904761904761905;1.4230769230769231;6.09979260705136e-05
+2010;UNIT;Aracaju;Sergipe;Nordeste;Universidade;Privada com fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;FAE CENTRO UNIVERSITÁRIO;Curitiba;Paraná;Sul;Centro Universitário;Privada sem fins lucrativos;0.01904761904761905;1.4230769230769231;6.09979260705136e-05
+2010;FGVSP;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.06666666666666668;0.31868131868131866;0.07498242678796542
+2010;UFPE;Recife;Pernambuco;Nordeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.01904761904761905;0.25241119736532575;0.007014761498109064
+2010;Centro Universitário IBMEC;Rio de Janeiro;Rio de Janeiro;Sudeste;Centro Universitário;Privada com fins lucrativos;0.01904761904761905;0.1901807869549805;0.007014761498109064
+2010;UERJ;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.01904761904761905;0.25633062589584327;0.02067829693790411
+2010;UFMT;Cuiabá;Mato Grosso;Centro-oeste;Universidade;Pública Federal;0.01904761904761905;0.7115384615384615;0.0002439917042820544
+2010;UFPEL;Pelotas;Rio Grande do Sul;Sul;Universidade;Pública Federal;0.009523809523809525;0.25633062589584327;0.0
+2010;UFMG;Belo Horizonte;Minas Gerais;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.0761904761904762;0.2364998897950187;0.06310540441624984
+2010;UNISUL;Florianópolis;Santa Catarina;Sul;Universidade;Privada sem fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;FFIA;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.01904761904761905;0.27330616403464086;2.033264202350453e-05
+2010;UTP;Curitiba;Paraná;Sul;Universidade;Privada com fins lucrativos;0.009523809523809525;0.9487179487179488;0.0
+2010;UFSC;Florianópolis;Santa Catarina;Sul;Universidade;Pessoa Jurídica de Direito Público - Federal;0.028571428571428574;0.8894230769230769;0.0004269854824935952
+2010;USP;São Paulo;São Paulo;Sudeste;Universidade;Pública Estadual;0.17142857142857143;0.40067214339059;0.19944637120433137
+2010;USF;Itatiba;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;PUCSP;São Paulo;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.0380952380952381;0.3236802413273001;0.025642656721100058
+2010;PUC MINAS;Belo Horizonte;Minas Gerais;Sudeste;Universidade;Privada sem fins lucrativos;0.028571428571428574;0.3012352610892757;0.0633727786588589
+2010;FGVSC;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.009523809523809525;0.7115384615384616;0.0
+2010;UFES;Vitória;Espírito Santo;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.01904761904761905;1.4230769230769231;6.09979260705136e-05
+2010;UNC;Mafra;Santa Catarina;Sul;Universidade;Privada sem fins lucrativos;0.009523809523809525;0.9487179487179488;0.0
+2010;UNIP;Curitiba;Paraná;Sul;Universidade;Privada com fins lucrativos;0.028571428571428574;0.26119766309639725;0.013968525070147614
+2010;FMU;Piracicaba;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.009523809523809525;0.1712416214490903;0.0
+2010;UTFPR;Curitiba;Paraná;Sul;Universidade;Pessoa Jurídica de Direito Público - Federal;0.009523809523809525;0.9487179487179488;0.0
+2010;UNESA;Curitiba;Paraná;Sul;Universidade;Privada com fins lucrativos;0.04761904761904762;0.2958367797077474;0.04961672969785695
+2010;PUC-RIO;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Privada sem fins lucrativos;0.0380952380952381;0.27421415793508813;0.028215607336017225
+2010;SENACSP;São Paulo;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;FEI;São Bernardo do Campo;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.01904761904761905;1.4230769230769231;6.09979260705136e-05
+2010;FGVRJ;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.009523809523809525;0.19888785912882298;0.0
+2010;EEK;Belo Horizonte;Minas Gerais;Sudeste;Faculdade;Privada sem fins lucrativos;0.009523809523809525;0.18930839802399435;0.0
+2010;FACHA;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.009523809523809525;1.4230769230769231;0.0
+2010;UFBA;Salvador;Bahia;Nordeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.009523809523809525;0.25164165103189495;0.0
+2010;FDC;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.01904761904761905;0.23448426573426573;0.02531820584766787
+2010;IBMEC SP;São Paulo;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.009523809523809525;0.23855046687416628;0.0
+2010;INFNET;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada com fins lucrativos;0.009523809523809525;0.25633062589584327;0.0
+2010;CEFET/RJ;Rio de Janeiro;Rio de Janeiro;Sudeste;Centro Federal de Educação Tecnológica;Pessoa Jurídica de Direito Público - Federal;0.009523809523809525;0.22307692307692303;0.0
+2010;PUCRS;Porto Alegre;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.01904761904761905;1.4230769230769231;6.09979260705136e-05
+2010;UFLA;Lavras;Minas Gerais;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.009523809523809525;0.9487179487179488;0.0
+2010;FGVMG;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.009523809523809525;0.18930839802399435;0.0
+2010;PUC-CAMPINAS;Campinas;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.009523809523809525;1.4230769230769231;0.0

@@ -1,0 +1,28 @@
+State;State_Abbrev;Region;Capital;Region_PT;State_EN
+Acre;AC;North;"Rio Branco";Norte;Acre
+Alagoas;AL;Northeast;Maceió;Nordeste;Alagoas
+Amapá;AP;North;Macapá;Norte;Amapa
+Amazonas;AM;North;Manaus;Norte;Amazonas
+Bahia;BA;Northeast;Salvador;Nordeste;Bahia
+Ceará;CE;Northeast;Fortaleza;Nordeste;Ceara
+"Distrito Federal";DF;West-centre;Brasília;Centro-Oeste;"Distrito Federal"
+"Espírito Santo";ES;Southeast;Vitória;Sudeste;"Espirito Santo"
+Goiás;GO;West-centre;Goiânia;Centro-Oeste;Goias
+Maranhão;MA;Northeast;"São Luís";Nordeste;Maranhao
+"Mato Grosso";MT;West-centre;Cuiabá;Centro-Oeste;"Mato Grosso"
+"Mato Grosso do Sul";MS;West-centre;"Campo Grande";Centro-Oeste;"Mato Grosso do Sul"
+"Minas Gerais";MG;Southeast;"Belo Horizonte";Sudeste;"Minas Gerais"
+Pará;PA;North;Belém;Norte;Para
+Paraíba;PB;Northeast;"João Pessoa";Nordeste;Paraiba
+Paraná;PR;South;Curitiba;Sul;Parana
+Pernambuco;PE;Northeast;Recife;Nordeste;Pernambuco
+Piauí;PI;Northeast;Teresina;Nordeste;Piaui
+"Rio de Janeiro";RJ;Southeast;"Rio de Janeiro";Sudeste;"Rio de Janeiro"
+"Rio Grande do Norte";RN;Northeast;Natal;Nordeste;"Rio Grande do Norte"
+"Rio Grande do Sul";RS;South;"Porto Alegre";Sul;"Rio Grande do Sul"
+Rondônia;RO;North;"Porto Velho";Norte;Rondonia
+Roraima;RR;North;"Boa Vista";Norte;Roraima
+"Santa Catarina";SC;South;Florianópolis;Sul;"Santa Catarina"
+"São Paulo";SP;Southeast;"São Paulo";Sudeste;"Sao Paulo"
+Sergipe;SE;Northeast;Aracaju;Nordeste;Sergipe
+Tocantins;TO;North;Palmas;Norte;Tocantins

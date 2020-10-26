@@ -1,0 +1,288 @@
+ano;ies;cidade;estado;regiao;categoria1;categoria2;degree;closeness;betweenness
+2019;UEL;Londrina;Paraná;Sul;Universidade;Pública Estadual;0.00942507068803016;0.2627738953572526;0.008676615321480511
+2019;UNIVALI;Itajaí;Santa Catarina;Sul;Universidade;Privada sem fins lucrativos;0.010367577756833175;0.29135758631109465;0.01802618850376724
+2019;FASM;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;CUML;Ribeirão Preto;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;0.2823756778463188;0.0
+2019;UNICAP;Recife;Pernambuco;Nordeste;Universidade;Privada sem fins lucrativos;0.006597549481621112;0.2810919088998684;0.007303037962424198
+2019;UNAMA;Belém;Pará;Norte;Universidade;Privada com fins lucrativos;0.001885014137606032;0.23423586220716738;0.0026968424653377398
+2019;FGVPR;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.00942507068803016;0.23602420662993562;0.0074603627092720655
+2019;UFRGS;Porto Alegre;Rio Grande do Sul;Sul;Universidade;Pessoa Jurídica de Direito Público - Federal;0.04241281809613572;0.2992305277439817;0.06241423569305042
+2019;UNIVEM;Marília;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UFPA;Belém;Pará;Norte;Universidade;Pessoa Jurídica de Direito Público - Federal;0.002827521206409048;0.20855715911207384;0.002697945919701626
+2019;UAM;São Paulo;São Paulo;Sudeste;Universidade;Privada com fins lucrativos;0.016022620169651274;0.29021791259190405;0.009065104892251196
+2019;UEMS;Dourados;Mato Grosso do Sul;Centro-oeste;Universidade;Pública Estadual;0.000942507068803016;0.23232882215162132;0.0
+2019;UMC;Mogi das Cruzes;São Paulo;Sudeste;Universidade;Privada com fins lucrativos;0.001885014137606032;1.212323682256867;1.1034543638861456e-06
+2019;CENTRO UNIVERSITÁRIO UNIVEL;Cascavel;Paraná;Sul;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;0.8082157881712447;0.0
+2019;FSM;Cajazeiras;Paraíba;Nordeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UNIFOR;Fortaleza;Ceará;Nordeste;Universidade;Privada sem fins lucrativos;0.001885014137606032;0.2501068914684654;0.001349524687032756
+2019;UNIA;Santo André;São Paulo;Sudeste;Centro Universitário;Privada com fins lucrativos;0.011310084825636193;0.2875187341760134;0.01389837603486447
+2019;UNESC;Criciúma;Santa Catarina;Sul;Universidade;Privada sem fins lucrativos;0.00471253534401508;0.1722842432465349;0.0067354854371610325
+2019;UFRJ;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.03864278982092366;0.30476159110338985;0.046686135013583985
+2019;CEUN-IMT;São Caetano do Sul;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.011310084825636193;0.28530747684722274;0.005850473609114414
+2019;FACULDADE CNEC VARGINHA;Varginha;Minas Gerais;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UECE;Fortaleza;Ceará;Nordeste;Universidade;Pública Estadual;0.002827521206409048;0.21999765560895557;0.00038201663120298625
+2019;FEBASP;São Paulo;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.003770028275212064;0.2658814167859533;0.0008079981309755054
+2019;UCP;Petrópolis;Rio de Janeiro;Sudeste;Universidade;Privada sem fins lucrativos;0.001885014137606032;0.2277642650932318;7.241797704439296e-05
+2019;FACULDADE CESUSC;Florianópolis;Santa Catarina;Sul;Faculdade;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;FACSPEI;Curitiba;Paraná;Sul;Faculdade;Privada sem fins lucrativos;0.001885014137606032;0.22384736567844402;0.001349524687032756
+2019;FACIC;Curitiba;Paraná;Sul;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.17984295080383048;0.0
+2019;FAMINAS-BH;Belo Horizonte;Minas Gerais;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.1845856682525694;0.0
+2019;FURB;Blumenau;Santa Catarina;Sul;Universidade;Pública Municipal;0.00471253534401508;0.2155868352582312;0.0023637993033219537
+2019;UESPI;Piripiri;Piauí;Nordeste;Universidade;Pública Estadual;0.000942507068803016;1.212323682256867;0.0
+2019;UNIVILLE;Joinville;Santa Catarina;Sul;Universidade;Privada sem fins lucrativos;0.003770028275212064;0.23066752480684052;0.0062767269182772145
+2019;FDPII;Salvador;Bahia;Nordeste;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;ESNS;Curitiba;Paraná;Sul;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;USCS;São Caetano do Sul;São Paulo;Sudeste;Universidade;Pública Municipal;0.00471253534401508;0.24474421690292025;0.00429393922565117
+2019;FGVRS;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.011310084825636193;0.25955644342879225;0.0071077041456582375
+2019;FIVJ;Juiz de Fora;Minas Gerais;Sudeste;Faculdade;Privada com fins lucrativos;0.001885014137606032;0.20756528005069314;0.00012159367764408986
+2019;UCAM;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Privada sem fins lucrativos;0.010367577756833175;0.307668295061664;0.010550360339967453
+2019;MACKENZIE;São Paulo;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.04524033930254477;0.3191835205597774;0.05166202617999961
+2019;FCL;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.00471253534401508;0.26305339249821047;0.0004697843035269029
+2019;FADEP;Pato Branco;Paraná;Sul;Faculdade;Privada com fins lucrativos;0.001885014137606032;1.212323682256867;1.1034543638861456e-06
+2019;Centro Universitário UNIBTA;São Paulo;São Paulo;Sudeste;Centro Universitário;Privada com fins lucrativos;0.001885014137606032;1.212323682256867;1.1034543638861456e-06
+2019;DOM BOSCO;Curitiba;Paraná;Sul;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.25078319876329314;0.0
+2019;FSL;Jaboticabal;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.001885014137606032;0.2087919216381603;0.0026968424653377398
+2019;CENTRO UNIVERSITÁRIO ESPÍRITO-SANTENSE/FAESA;Vitória;Espírito Santo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.002827521206409048;0.17105293222851933;0.002697945919701626
+2019;EEP/FUMEP;Piracicaba;São Paulo;Sudeste;Faculdade;Pública Municipal;0.000942507068803016;0.2237123755589334;0.0
+2019;UFRN;Natal;Rio Grande do Norte;Nordeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.005655042412818096;0.23335181429193352;0.008079492852374357
+2019;UVA;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Privada com fins lucrativos;0.002827521206409048;0.23738348857501285;0.0015152621206605435
+2019;UFOP;Ouro Preto;Minas Gerais;Sudeste;Universidade;Pública Federal;0.000942507068803016;1.212323682256867;0.0
+2019;UEMG;Belo Horizonte;Minas Gerais;Sudeste;Universidade;Pública Estadual;0.000942507068803016;0.21947702811454003;0.0
+2019;FGVBA;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.001885014137606032;0.18254203310153835;5.517271819430728e-07
+2019;PUC GOIÁS;Goiânia;Goiás;Centro-oeste;Universidade;Privada sem fins lucrativos;0.003770028275212064;0.17558681659950365;0.005380995205490789
+2019;FUMEC;Belo Horizonte;Minas Gerais;Sudeste;Universidade;Privada sem fins lucrativos;0.015080113100848256;0.23102665220028104;0.013229528101646997
+2019;UNISANTOS;Santos;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.003770028275212064;0.2252746602523767;0.0029145798072233242
+2019;UFABC;Santo André;São Paulo;Sudeste;Universidade;Pública Federal;0.00471253534401508;0.2452295797525046;0.003587708262716192
+2019;UNINOVE;Mauá;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.007540056550424128;0.25483156226728576;0.0023278132242765554
+2019;ESPM;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.07257304429783223;0.35423351326865726;0.12159271973395026
+2019;UNI-FACEF;Franca;São Paulo;Sudeste;Centro Universitário;Especial;0.000942507068803016;1.212323682256867;0.0
+2019;ULBRA;Curitiba;Paraná;Sul;Universidade;Privada sem fins lucrativos;0.007540056550424128;0.23976154258885204;0.016358933367216742
+2019;TREVISAN;São Paulo;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UNIOESTE;Cascavel;Paraná;Sul;Universidade;Pública Estadual;0.000942507068803016;0.8082157881712447;0.0
+2019;UFCSPA;Porto Alegre;Rio Grande do Sul;Sul;Universidade;Pública Federal;0.000942507068803016;1.212323682256867;0.0
+2019;UFCG;Campina Grande;Paraíba;Nordeste;Universidade;Pública Federal;0.001885014137606032;0.1509700058075496;0.001349524687032756
+2019;FGVPA;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.8082157881712447;0.0
+2019;FGP;Pederneiras;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.2228388927890682;0.0
+2019;UNIPAC;Itajubá;Minas Gerais;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.001885014137606032;0.21703732442334434;0.0004951377766566948
+2019;UCPEL;Pelotas;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.005655042412818096;0.22377985026125852;0.003908606308839535
+2019;PUCPR;Curitiba;Paraná;Sul;Universidade;Privada sem fins lucrativos;0.022620169651272386;0.2989893586706438;0.029764705569249424
+2019;FSJ;São José dos Pinhais;Paraná;Sul;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;0.23247441439486216;0.0
+2019;FACAMP;Curitiba;Paraná;Sul;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.23587413560362505;0.0
+2019;CENTRO UNIVERSITÁRIO CATÓLICO DE VITÓRIA;Vitória;Espírito Santo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;0.2517191157052426;0.0
+2019;IFPA;Belém;Pará;Norte;Instituto Federal de Educação, Ciência e Tecnologia;Pública Federal;0.000942507068803016;0.2084399757104095;0.0
+2019;CESCAGE;Ponta Grossa;Paraná;Sul;Faculdade;Privada com fins lucrativos;0.001885014137606032;0.15337304259249668;0.001349524687032756
+2019;UNIRIO;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Pública Federal;0.000942507068803016;0.20543876326767344;0.0
+2019;UNIPLAC;Lages;Santa Catarina;Sul;Universidade;Privada sem fins lucrativos;0.002827521206409048;0.19729878833697717;0.005388167658856049
+2019;FA-FAAP;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.036757775683317624;0.3180887860841169;0.03742247634494851
+2019;ITA;São José dos Campos;São Paulo;Sudeste;Faculdade;Pública Federal;0.01413760603204524;0.28377972596718404;0.012628764241495496
+2019;UFMS;Campo Grande;Mato Grosso do Sul;Centro-oeste;Universidade;Pública Federal;0.003770028275212064;0.2658814167859533;0.0022579666991843664
+2019;FACCAT;Taquara;Rio Grande do Sul;Sul;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;ESTÁCIO FARGS;Porto Alegre;Rio Grande do Sul;Sul;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.20230186599623792;0.0
+2019;FGV-EAESP;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.003770028275212064;0.25309298773365263;0.0007822031180188086
+2019;UNIS-MG;Varginha;Minas Gerais;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;0.2317482722290185;0.0
+2019;URI;Erechim;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.001885014137606032;1.212323682256867;1.1034543638861456e-06
+2019;UFPB;João Pessoa;Paraíba;Nordeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.001885014137606032;0.23081104169892758;0.001349524687032756
+2019;UNICURITIBA;Curitiba;Paraná;Sul;Centro Universitário;Privada com fins lucrativos;0.006597549481621112;0.2643656132339935;0.0066413375419242075
+2019;IBMEC;Curitiba;Paraná;Sul;Faculdade;Privada com fins lucrativos;0.022620169651272386;0.3046364580337519;0.030223723765060887
+2019;UNAERP;Ribeirão Preto;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.001885014137606032;0.23505214431845484;0.00013827470742895648
+2019;FATIPUC;Canoas;Rio Grande do Sul;Sul;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;FIAP;São Paulo;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.016022620169651274;0.27793298128533533;0.01769503832856369
+2019;USU;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Privada sem fins lucrativos;0.002827521206409048;0.23088286713589626;0.0014381702658028796
+2019;UNA;Belo Horizonte;Minas Gerais;Sudeste;Centro Universitário;Privada com fins lucrativos;0.008482563619227144;0.296125361620915;0.007786732701454357
+2019;UCB;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;CEULM/ULBRA;Manaus;Amazonas;Norte;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;0.16719821826280623;0.0
+2019;UNOCHAPECÓ;Chapecó;Santa Catarina;Sul;Universidade;Privada sem fins lucrativos;0.000942507068803016;0.21268226846530103;0.0
+2019;FTEC Porto Alegre;Porto Alegre;Rio Grande do Sul;Sul;Faculdade;Privada com fins lucrativos;0.001885014137606032;1.212323682256867;1.1034543638861456e-06
+2019;UNIFIEO;Osasco;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;INSPER;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.036757775683317624;0.31700153537329745;0.04318556530553218
+2019;CES/JF;Juiz de Fora;Minas Gerais;Sudeste;Faculdade;Privada sem fins lucrativos;0.002827521206409048;1.212323682256867;3.3103630916584366e-06
+2019;FGVGO;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.002827521206409048;0.13637387988993707;0.0013539385044883006
+2019;UNIFRAN;Franca;São Paulo;Sudeste;Universidade;Privada com fins lucrativos;0.000942507068803016;0.23038102578518946;0.0
+2019;UFAM;Manaus;Amazonas;Norte;Universidade;Pública Federal;0.007540056550424128;0.23073926093646485;0.011918917240558534
+2019;FACULDADE DE MIRASSOL;Mirassol;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UniMetrocamp Wyden;Campinas;São Paulo;Sudeste;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;0.2313868995918299;0.0
+2019;UNIFACVEST;Lages;Santa Catarina;Sul;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;ESPM - POA;Porto Alegre;Rio Grande do Sul;Sul;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.171885113759111;0.0
+2019;UDESC;Florianópolis;Santa Catarina;Sul;Universidade;Pública Estadual;0.00471253534401508;0.21741892851024253;0.0020577059190928933
+2019;COTEMIG;Belo Horizonte;Minas Gerais;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.1504495779258243;0.0
+2019;CESUMAR;Curitiba;Paraná;Sul;Faculdade;Privada com fins lucrativos;0.005655042412818096;0.22520628123879274;0.007091263439172796
+2019;IFPE;Recife;Pernambuco;Nordeste;Instituto Federal de Educação, Ciência e Tecnologia;Pública Federal;0.000942507068803016;0.2146512638626364;0.0
+2019;FDV;Vitória;Espírito Santo;Sudeste;Faculdade;Privada com fins lucrativos;0.003770028275212064;0.2349777018341101;0.00048416622022345895
+2019;UNICID;São Paulo;São Paulo;Sudeste;Universidade;Privada com fins lucrativos;0.002827521206409048;0.23761155918052926;0.0002969659409835563
+2019;FASC;Santos;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.002827521206409048;0.2458797327394209;0.014760502531792941
+2019;UNIB;São Paulo;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.005655042412818096;0.23475465702933163;0.0029680059663147935
+2019;FACULDADE UNINASSAU LAURO DE FREITAS;Lauro de Freitas;Bahia;Nordeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;FSDB;Piracicaba;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;CEUNSP;Itu;São Paulo;Sudeste;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;0.23247441439486216;0.0
+2019;UNISINOS;São Leopoldo;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.011310084825636193;0.25197557939928766;0.009594312857583292
+2019;UEPB;Campina Grande;Paraíba;Nordeste;Universidade;Pessoa Jurídica de Direito Público - Estadual;0.000942507068803016;0.23059583326843902;0.0
+2019;UNP;Natal;Rio Grande do Norte;Nordeste;Universidade;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UNISAL;Americana;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.002827521206409048;0.19085327165047014;0.002697945919701626
+2019;FCMMG;Belo Horizonte;Minas Gerais;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.20641037516795177;0.0
+2019;Uniopet;Curitiba;Paraná;Sul;Centro Universitário;Privada com fins lucrativos;0.002827521206409048;0.2413212208623199;0.0008221524939666835
+2019;CESUPA;Belém;Pará;Norte;Centro Universitário;Privada sem fins lucrativos;0.001885014137606032;0.22032430394690503;0.0005270271120687832
+2019;PIO XII;Cariacica;Espírito Santo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UFRPE;Recife;Pernambuco;Nordeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.000942507068803016;0.19213831245402113;0.0
+2019;ISAE;Curitiba;Paraná;Sul;Faculdade;Privada sem fins lucrativos;0.027332704995287463;0.33610060862568636;0.04282368543204668
+2019;FATEC;Ourinhos;São Paulo;Sudeste;Faculdade;Pública Estadual;0.000942507068803016;1.212323682256867;0.0
+2019;UNICEP;São Carlos;São Paulo;Sudeste;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;0.2469436157567657;0.0
+2019;CSJT;Santos;São Paulo;Sudeste;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;0.16427368394579933;0.0
+2019;UFU;Uberlândia;Minas Gerais;Sudeste;Universidade;Pública Federal;0.007540056550424128;0.23715585537516468;0.008113463907414926
+2019;UNIFESP;São Paulo;São Paulo;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.003770028275212064;0.25526994444906337;0.002930878029728355
+2019;UNIT;Aracaju;Sergipe;Nordeste;Universidade;Privada com fins lucrativos;0.002827521206409048;0.25002260944943644;0.0026979459197016263
+2019;IME;Rio de Janeiro;Rio de Janeiro;Sudeste;Centro Universitário;Pública Federal;0.00471253534401508;0.2417143161886961;0.0008657869269997415
+2019;CENTRO UNIVERSITÁRIO SOCIESC;Blumenau;Santa Catarina;Sul;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;0.17381799075581647;0.0
+2019;FAE CENTRO UNIVERSITÁRIO;Curitiba;Paraná;Sul;Centro Universitário;Privada sem fins lucrativos;0.015080113100848256;0.27152501136000096;0.018105287338085245
+2019;UNIFIL;Londrina;Paraná;Sul;Centro Universitário;Privada sem fins lucrativos;0.002827521206409048;0.22520628123879274;0.0006532457107260763
+2019;FMD;Pato Branco;Paraná;Sul;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.17726486525891832;0.0
+2019;CEFET/MG;Belo Horizonte;Minas Gerais;Sudeste;Centro Federal de Educação Tecnológica;Pessoa Jurídica de Direito Público - Federal;0.003770028275212064;0.20001134749729146;0.005390374567583821
+2019;FGVSP;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.10084825636192271;0.37671596524051926;0.19406510762144152
+2019;FEAN;Florianópolis;Santa Catarina;Sul;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.13420314615921183;0.0
+2019;UFMA;São Luís;Maranhão;Nordeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.001885014137606032;0.20082341143353707;0.004041953334914951
+2019;UFPE;Recife;Pernambuco;Nordeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.008482563619227144;0.27302376947238366;0.010022367353526485
+2019;FAMEG;Guaramirim;Santa Catarina;Sul;Centro Universitário;Privada com fins lucrativos;0.002827521206409048;0.18857341302356148;0.0015271552592821635
+2019;UMESP;Curitiba;Paraná;Sul;Universidade;Privada sem fins lucrativos;0.006597549481621112;0.26305339249821047;0.00555990235067836
+2019;FDMC;Nova Lima;Minas Gerais;Sudeste;Faculdade;Privada sem fins lucrativos;0.003770028275212064;0.2591937444685424;0.0007198193537585708
+2019;UFJF;Juiz de Fora;Minas Gerais;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.006597549481621112;0.2540462569906532;0.003048231960911357
+2019;UCSAL;Salvador;Bahia;Nordeste;Universidade;Privada sem fins lucrativos;0.001885014137606032;0.23145908393111922;2.758635909715364e-07
+2019;UNIANCHIETA;Jundiaí;São Paulo;Sudeste;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;0.23670189616883158;0.0
+2019;Centro Universitário IBMEC;Rio de Janeiro;Rio de Janeiro;Sudeste;Centro Universitário;Privada com fins lucrativos;0.0235626767200754;0.305012165895664;0.02442948711906996
+2019;IPOG;Curitiba;Paraná;Sul;Faculdade;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;FGVPB;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.1690265619184879;0.0
+2019;UERJ;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.005655042412818096;0.25274811566724664;0.003287904640177662
+2019;UNITAU;Taubaté;São Paulo;Sudeste;Universidade;Pública Municipal;0.002827521206409048;0.2540462569906532;0.0006468071298043894
+2019;UFV;Viçosa;Minas Gerais;Sudeste;Universidade;Pública Federal;0.00471253534401508;0.26521611922831195;0.003646321680639711
+2019;UFMT;Cuiabá;Mato Grosso;Centro-oeste;Universidade;Pública Federal;0.002827521206409048;0.23960668288106013;0.0014544840497591688
+2019;UFPEL;Pelotas;Rio Grande do Sul;Sul;Universidade;Pública Federal;0.002827521206409048;0.23438385517017934;0.001203617643124749
+2019;IFSC;Florianópolis;Santa Catarina;Sul;Instituto Federal de Educação, Ciência e Tecnologia;Pública Federal;0.002827521206409048;0.23349869190911177;0.0026979459197016263
+2019;UFMG;Belo Horizonte;Minas Gerais;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.03298774740810556;0.29731199901470756;0.05030769058827592
+2019;UNIFESO;Teresópolis;Rio de Janeiro;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;0.18249713283512548;0.0
+2019;UEFS;Feira de Santana;Bahia;Nordeste;Universidade;Pública Estadual;0.001885014137606032;0.21590050735958174;0.001349524687032756
+2019;UNISUL;Florianópolis;Santa Catarina;Sul;Universidade;Privada sem fins lucrativos;0.005655042412818096;0.2631466903852465;0.006543824221802488
+2019;FFIA;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.03204524033930255;0.3176801941944777;0.04026686706540979
+2019;Estácio FAAC;Cotia;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.21165086108720657;0.0
+2019;FBT;Porto Alegre;Rio Grande do Sul;Sul;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.18691071760705444;0.0
+2019;UNINTER;Curitiba;Paraná;Sul;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UTP;Curitiba;Paraná;Sul;Universidade;Privada com fins lucrativos;0.001885014137606032;0.19756146812440492;0.0002679714756785646
+2019;UNIFIAM-FAAM;São Paulo;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;0.22651262205501532;0.0
+2019;UNIPAM;Patos de Minas;Minas Gerais;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UFSC;Florianópolis;Santa Catarina;Sul;Universidade;Pessoa Jurídica de Direito Público - Federal;0.030160226201696512;0.31050098076635385;0.04290204851348952
+2019;UNIFEI;Itajubá;Minas Gerais;Sudeste;Universidade;Pública Federal;0.003770028275212064;0.24968604864250465;0.0027163851001932734
+2019;FACULDADE FLAMINGO;São Paulo;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.2359491472543179;0.0
+2019;UPF;Passo Fundo;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.001885014137606032;1.212323682256867;1.1034543638861456e-06
+2019;USP;São Paulo;São Paulo;Sudeste;Universidade;Pública Estadual;0.14608859566446747;0.371249483883514;0.22413546146636293
+2019;UNISANT'ANNA;São Paulo;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.002827521206409048;0.21268226846530103;7.161696646260027e-05
+2019;USF;Itatiba;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.003770028275212064;0.2603762391792253;0.0031639833344262115
+2019;FEEVALE;Novo Hamburgo;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.00471253534401508;0.21496221745362962;0.0053914780219477074
+2019;UNIPÊ;João Pessoa;Paraíba;Nordeste;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;0.23073926093646485;0.0
+2019;FTT;São Bernardo do Campo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;PUCSP;São Paulo;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.03298774740810556;0.2953003357377921;0.03105846561108898
+2019;FDF;Franca;São Paulo;Sudeste;Faculdade;Pública Municipal;0.000942507068803016;0.23445792180161243;0.0
+2019;UNIAMÉRICA;Curitiba;Paraná;Sul;Centro Universitário;Privada sem fins lucrativos;0.002827521206409048;0.25283424554138784;0.0030285589125547173
+2019;FGVSC;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.013195098963242224;0.24353917398365427;0.017379239566825473
+2019;PUC MINAS;Belo Horizonte;Minas Gerais;Sudeste;Universidade;Privada sem fins lucrativos;0.022620169651272386;0.30326674577608936;0.02704053529734897
+2019;UFRRJ;Seropédica;Rio de Janeiro;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.001885014137606032;0.20475840859423283;0.001349524687032756
+2019;PROMOVE;Belo Horizonte;Minas Gerais;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.23145908393111922;0.0
+2019;UESC;Ilhéus;Bahia;Nordeste;Universidade;Pública Estadual;0.000942507068803016;0.2237123755589334;0.0
+2019;FMG;Juiz de Fora;Minas Gerais;Sudeste;Faculdade;Privada sem fins lucrativos;0.001885014137606032;0.23624967156223617;0.0006412373722305222
+2019;FURG;Rio Grande;Rio Grande do Sul;Sul;Universidade;Pública Federal;0.000942507068803016;0.22609845910138737;0.0
+2019;CBM;Ribeirão Preto;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.001885014137606032;0.23052418627969634;1.1034543638861456e-06
+2019;UFES;Vitória;Espírito Santo;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.011310084825636193;0.23852824097129163;0.011939821976502858
+2019;UNC;Mafra;Santa Catarina;Sul;Universidade;Privada sem fins lucrativos;0.001885014137606032;0.6927563898610669;3.3103630916584366e-06
+2019;FASB I;São Bernardo do Campo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;FGVAM;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.16719821826280623;0.0
+2019;UNIP;Curitiba;Paraná;Sul;Universidade;Privada com fins lucrativos;0.027332704995287463;0.3006857521950163;0.035899909911565026
+2019;UNIVATES;Lajeado;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.001885014137606032;0.20197144236864098;0.001349524687032756
+2019;UNISC;Santa Cruz do Sul;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.003770028275212064;0.24329958797875148;0.001817746916670178
+2019;UERGS;Bagé;Rio Grande do Sul;Sul;Universidade;Pública Estadual;0.000942507068803016;1.212323682256867;0.0
+2019;FNM;Vila Velha;Espírito Santo;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.2084399757104095;0.0
+2019;UNICHRISTUS;Fortaleza;Ceará;Nordeste;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UNIVERSO;São José dos Pinhais;Paraná;Sul;Universidade;Privada sem fins lucrativos;0.001885014137606032;0.2395293280197587;0.001349524687032756
+2019;IFRN;Mossoró;Rio Grande do Norte;Nordeste;Instituto Federal de Educação, Ciência e Tecnologia;Pública Federal;0.000942507068803016;0.16856573748522155;0.0
+2019;UFG;Goiânia;Goiás;Centro-oeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.003770028275212064;0.17558681659950365;0.005380995205490789
+2019;FACULDADE DE TECNOLOGIA SAINT PAUL;São Paulo;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.19867240421507637;0.0
+2019;UNIFAI;São Paulo;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.001885014137606032;0.2325472789660563;5.517271819430728e-07
+2019;UNIFAMMA;Maringá;Paraná;Sul;Centro Universitário;Privada com fins lucrativos;0.001885014137606032;0.20762336464004552;0.001349524687032756
+2019;FACEPD;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.18472353878780098;0.0
+2019;UNILASALLE;Curitiba;Paraná;Sul;Universidade;Privada sem fins lucrativos;0.000942507068803016;0.2383749698124346;0.0
+2019;UNIC/UNIME;Cuiabá;Mato Grosso;Centro-oeste;Universidade;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UVV;Vila Velha;Espírito Santo;Sudeste;Universidade;Privada sem fins lucrativos;0.001885014137606032;1.212323682256867;1.1034543638861456e-06
+2019;UNIJUI;Três Passos;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.000942507068803016;0.20044362921550793;0.0
+2019;FACULDADE DE CIÊNCIAS JURÍDICAS E SOCIAIS APLICADAS DE PRIMAVERA DO LESTE;Primavera do Leste;Mato Grosso;Centro-oeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.2394520230889794;0.0
+2019;URCAMP;Alegrete;Rio Grande do Sul;Sul;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;0.20066047154596423;0.0
+2019;FGV DIREITO SP;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.001885014137606032;0.20914505808067727;0.000138305407398275
+2019;FMU;Piracicaba;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.001885014137606032;0.2203897500493696;2.957396410463053e-05
+2019;UTFPR;Curitiba;Paraná;Sul;Universidade;Pessoa Jurídica de Direito Público - Federal;0.006597549481621112;0.2503600788058723;0.00596311815968457
+2019;FACULDADE PITÁGORAS DE LINHARES;Linhares;Espírito Santo;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UNESA;Curitiba;Paraná;Sul;Universidade;Privada com fins lucrativos;0.0235626767200754;0.30869236261335664;0.04505822650758029
+2019;UNICRUZ;Cruz Alta;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.001885014137606032;0.26305339249821047;0.00013051332829374388
+2019;PUC-RIO;Rio de Janeiro;Rio de Janeiro;Sudeste;Universidade;Privada sem fins lucrativos;0.04524033930254477;0.33473588700257284;0.08190207871039314
+2019;FRB-GV;Cotia;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;FPTEC;Belo Horizonte;Minas Gerais;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.23145908393111922;0.0
+2019;Católica em Jaraguá;Jaraguá do Sul;Santa Catarina;Sul;Centro Universitário;Privada sem fins lucrativos;0.002827521206409048;0.25811170413678997;0.0016486209173031134
+2019;INATEL;Santa Rita do Sapucaí;Minas Gerais;Sudeste;Faculdade;Privada sem fins lucrativos;0.001885014137606032;0.20768148174701265;0.001670035708673434
+2019;SENACSP;São Paulo;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.007540056550424128;0.24785104177090447;0.004942131471906846
+2019;UNIFACS;Salvador;Bahia;Nordeste;Universidade;Privada com fins lucrativos;0.002827521206409048;0.22144220072860846;0.002697945919701626
+2019;FOC;São Paulo;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.000942507068803016;0.20017323446410432;0.0
+2019;ESCOLA SUPERIOR DE ADMINISTRAÇÃO E GESTÃO STRONG;Santo André;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;FEI;São Bernardo do Campo;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.010367577756833175;0.2546566306988854;0.012760326862872656
+2019;UCS;Caxias do Sul;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.00471253534401508;0.25343880223439885;0.0032360488792662913
+2019;FGVRJ;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.017907634307257305;0.2609256527312125;0.014061762067431151
+2019;UNILUS;Santos;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UNISOCIESC;Curitiba;Paraná;Sul;Centro Universitário;Privada sem fins lucrativos;0.001885014137606032;0.148969399365767;0.001349524687032756
+2019;UFC;Fortaleza;Ceará;Nordeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.003770028275212064;0.2664543341861026;0.0028893700199623526
+2019;EEK;Belo Horizonte;Minas Gerais;Sudeste;Faculdade;Privada sem fins lucrativos;0.002827521206409048;0.21678366502299565;0.002697945919701626
+2019;FIT;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.00471253534401508;0.22217161058278265;0.0029123374995348814
+2019;FATEC/JD;Jundiaí;São Paulo;Sudeste;Faculdade;Pública Estadual;0.000942507068803016;1.212323682256867;0.0
+2019;UFF;Volta Redonda;Rio de Janeiro;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.016965127238454288;0.31050098076635385;0.020036607269394175
+2019;ESAMC;Sorocaba;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.002827521206409048;0.1740218350043867;0.001460629746931809
+2019;UPE;Recife;Pernambuco;Nordeste;Universidade;Pública Estadual;0.00471253534401508;0.21292641513594565;0.003043571510360463
+2019;UNICSUL;Curitiba;Paraná;Sul;Universidade;Privada com fins lucrativos;0.001885014137606032;0.27372886682944203;0.0001945209835565852
+2019;CESVASF;Curitiba;Paraná;Sul;Faculdade;Especial;0.000942507068803016;0.23335181429193352;0.0
+2019;FACHA;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.001885014137606032;0.17988655438021642;0.001349524687032756
+2019;IPA;Porto Alegre;Rio Grande do Sul;Sul;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;0.22665101375934096;0.0
+2019;IED SP;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.002827521206409048;0.2557098375120464;0.001414568228926818
+2019;UFBA;Salvador;Bahia;Nordeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.00942507068803016;0.2609256527312125;0.010852809637478313
+2019;USJT;São Paulo;São Paulo;Sudeste;Universidade;Privada com fins lucrativos;0.006597549481621112;0.26184651263144615;0.005788031321823582
+2019;FDC;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.016965127238454288;0.31206817814561627;0.023150907239001657
+2019;UNI-BH;Belo Horizonte;Minas Gerais;Sudeste;Centro Universitário;Privada com fins lucrativos;0.005655042412818096;0.24353917398365427;0.0013321321309244037
+2019;FATEC-SP;São Paulo;São Paulo;Sudeste;Faculdade;Pública Estadual;0.003770028275212064;0.26664585572010874;0.0019693862604535737
+2019;ISESA;Ponta Grossa;Paraná;Sul;Faculdade;Pública Municipal;0.000942507068803016;1.212323682256867;0.0
+2019;FESL;São Luís;Maranhão;Nordeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.15536427463955663;0.0
+2019;AMF;São João do Polêsine;Rio Grande do Sul;Sul;Faculdade;Privada com fins lucrativos;0.001885014137606032;0.23640022097855748;0.0013495246870327557
+2019;CENTRO UNIVERSITÁRIO UNIHORIZONTES;Belo Horizonte;Minas Gerais;Sudeste;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;0.2176102342106475;0.0
+2019;UEPG;Ponta Grossa;Paraná;Sul;Universidade;Pública Estadual;0.002827521206409048;0.2050980217114589;0.005388167658856049
+2019;IBMEC SP;São Paulo;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.002827521206409048;0.24818267052724627;0.0004874503390884715
+2019;FAFICA;Caruaru;Pernambuco;Nordeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UFRA;Belém;Pará;Norte;Universidade;Pessoa Jurídica de Direito Público - Federal;0.000942507068803016;0.8082157881712447;0.0
+2019;FCB;Colatina;Espírito Santo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.17125033895930816;0.0
+2019;UFSM;Santa Maria;Rio Grande do Sul;Sul;Universidade;Pessoa Jurídica de Direito Público - Federal;0.00471253534401508;0.24218772434836056;0.0032580027958605713
+2019;UCDB;Campo Grande;Mato Grosso do Sul;Centro-oeste;Universidade;Privada sem fins lucrativos;0.002827521206409048;0.24596124433654987;0.0013777396345852995
+2019;FEPAR;Curitiba;Paraná;Sul;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.23002390126839328;0.0
+2019;FACULDADE UNIÃO BANDEIRANTE;São Paulo;São Paulo;Sudeste;Faculdade;Privada com fins lucrativos;0.001885014137606032;0.25395929951778284;3.22780012860836e-05
+2019;UNIFAE;São João da Boa Vista;São Paulo;Sudeste;Centro Universitário;Especial;0.000942507068803016;0.21183214662132838;0.0
+2019;NEWTON PAIVA;Belo Horizonte;Minas Gerais;Sudeste;Centro Universitário;Privada com fins lucrativos;0.003770028275212064;0.23670189616883158;0.0022167507190283676
+2019;FGVES;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.001885014137606032;0.21021167121156045;0.001253957605040703
+2019;UP;Curitiba;Paraná;Sul;Universidade;Privada com fins lucrativos;0.00942507068803016;0.25553369848155766;0.009781064854493633
+2019;CESF;Manaus;Amazonas;Norte;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.16719821826280623;0.0
+2019;UNIDAVI;Rio do Sul;Santa Catarina;Sul;Centro Universitário;Privada sem fins lucrativos;0.003770028275212064;0.20578063889646445;0.0040452636980066094
+2019;CUFSA;Santo André;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UNIFEMM;Sete Lagoas;Minas Gerais;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;0.19958092630563623;0.0
+2019;UNESP;São Paulo;São Paulo;Sudeste;Universidade;Pública Estadual;0.011310084825636193;0.2800309845409332;0.006625576954466662
+2019;UNIFOA;Volta Redonda;Rio de Janeiro;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.001885014137606032;1.212323682256867;1.1034543638861456e-06
+2019;FMS;Juiz de Fora;Minas Gerais;Sudeste;Faculdade;Privada sem fins lucrativos;0.003770028275212064;0.24539179544938072;0.0014106893379495394
+2019;FRB;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.2363249222937419;0.0
+2019;INFNET;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada com fins lucrativos;0.00471253534401508;0.2554457199315554;0.005986959396698374
+2019;UNITRI;Uberlândia;Minas Gerais;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.003770028275212064;0.2504445885371148;0.00020822817437061988
+2019;CEFET/RJ;Rio de Janeiro;Rio de Janeiro;Sudeste;Centro Federal de Educação Tecnológica;Pessoa Jurídica de Direito Público - Federal;0.002827521206409048;0.2575740647600078;0.000356715713760192
+2019;PUCRS;Porto Alegre;Rio Grande do Sul;Sul;Universidade;Privada sem fins lucrativos;0.02827521206409048;0.31076108629998017;0.04222349642862802
+2019;UNIFEV;Votuporanga;São Paulo;Sudeste;Centro Universitário;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UNICEUMA;São Luís;Maranhão;Nordeste;Universidade;Privada sem fins lucrativos;0.000942507068803016;0.20066047154596423;0.0
+2019;FACULDADE REGES DE RIBEIRÃO PRETO;Ribeirão Preto;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;0.23045258379910008;0.0
+2019;ENIAC;Guarulhos;São Paulo;Sudeste;Centro Universitário;Privada com fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UEM;Maringá;Paraná;Sul;Universidade;Pública Estadual;0.003770028275212064;0.21665705753867795;0.0020357910213936064
+2019;UFLA;Lavras;Minas Gerais;Sudeste;Universidade;Pessoa Jurídica de Direito Público - Federal;0.001885014137606032;0.6927563898610669;3.3103630916584366e-06
+2019;FGVMG;Rio de Janeiro;Rio de Janeiro;Sudeste;Faculdade;Privada sem fins lucrativos;0.005655042412818096;0.2523183450233643;0.001814120481078551
+2019;PUC-CAMPINAS;Campinas;São Paulo;Sudeste;Universidade;Privada sem fins lucrativos;0.01413760603204524;0.2655008386263026;0.012371098300968322
+2019;FPA;São Paulo;São Paulo;Sudeste;Faculdade;Privada sem fins lucrativos;0.000942507068803016;1.212323682256867;0.0
+2019;UNIRP;São José do Rio Preto;São Paulo;Sudeste;Centro Universitário;Privada com fins lucrativos;0.001885014137606032;0.20756528005069314;0.001349524687032756
